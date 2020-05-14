@@ -1,0 +1,9 @@
+body {background-color: coral;}
+img{
+    margin-top: 30px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    
+}
