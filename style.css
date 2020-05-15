@@ -722,6 +722,17 @@ footer {
 	margin-left: 160px;
 }
 
+.wew
+{
+	color: #000;
+	background: -webkit-linear-gradient(transparent, transparent), url('http://studioleopard.pl/wp-content/uploads/2016/04/wyklikaj_strone.jpg');
+	background: -o-linear-gradient(transparent, transparent);
+	-webkit-text-fill-color: transparent;
+	-webkit-background-clip: text;
+	font-size: 40px;
+	text-align: center;
+}
+
 .h1
 {
 	font-size: 24px;
@@ -763,7 +774,16 @@ footer {
 
   }
 
- 
+ .display-5
+ {
+	color: #000;
+	background: -webkit-linear-gradient(transparent, transparent), url('http://studioleopard.pl/wp-content/uploads/2016/04/wyklikaj_strone.jpg');
+	background: -o-linear-gradient(transparent, transparent);
+	-webkit-text-fill-color: transparent;
+	-webkit-background-clip: text;
+	font-size: 30px;
+	text-align: center;
+ }
 
   .about{
 	
