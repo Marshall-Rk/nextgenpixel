@@ -580,7 +580,7 @@ header {
 footer {
 	background: rgb(42, 154, 168);
 	background: -webkit-linear-gradient(59deg, rgb(16, 187, 187), #16222A);
-	background: linear-gradient(59deg, rgb(136, 26, 187), rgb(0, 0, 0));
+	background: linear-gradient(59deg, rgb(51, 100, 146), rgb(0, 0, 0));
 	color: white;
 	margin-top:100px;
 	padding:0px;
