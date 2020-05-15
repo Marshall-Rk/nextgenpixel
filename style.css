@@ -565,18 +565,22 @@ header {
 
 .mail
 {
-	color: black;
+	border-radius: 4px;
+	color: rgb(188, 20, 240);
 	margin-bottom: 30px;
-	background-color: rgb(0, 247, 255);
+	background-color: rgb(0, 0, 0);
 	padding: 10px;
 }
-  
+.mail:hover
+{
+	color: rgb(0, 0, 0);
+	background-color: rgb(255, 0, 200);
 
-
+}
 footer {
-	background: #16222A;
-	background: -webkit-linear-gradient(59deg, #3A6073, #16222A);
-	background: linear-gradient(59deg, #3A6073, #16222A);
+	background: rgb(42, 154, 168);
+	background: -webkit-linear-gradient(59deg, rgb(16, 187, 187), #16222A);
+	background: linear-gradient(59deg, rgb(136, 26, 187), rgb(0, 0, 0));
 	color: white;
 	margin-top:100px;
 	padding:0px;
@@ -732,8 +736,7 @@ footer {
 	box-shadow: 5px 10px solid #0000;
 	user-select: none;
 	margin:10px auto;
-	background-image: url(https://images.unsplash.com/photo-1471897488648-5eae4ac6686b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&q=60);
-	
+	background-image: url("card design1.jpg");
 	color: #000000;
 	
 	border-radius: 5px;
@@ -752,7 +755,7 @@ footer {
 	width: 120px;
 	border-radius: 50%;
 	margin: 93px 0 0 -175px;
-	border: 1px solid #1f1a32;
+	border: 1px solid #000000;
 	padding: 7px;
 
   }
@@ -760,12 +763,14 @@ footer {
  
 
   .about{
-	  color: rgb(11, 231, 247);
+	
+	  color: rgb(0, 0, 0);
   }
   .profile-name{
+	 
 	font-size: 25px;
 	font-weight: bold;
-	margin: 27px 0 0 120px;
+	margin-left: 210px;
   }
   .about{
 	margin-top: 35px;
