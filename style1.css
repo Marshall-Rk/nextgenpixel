@@ -15,11 +15,12 @@ body
     display:none;
 }
 .wrapper {
-  margin:20px auto;
+  margin:40px;
 
 }
 a
 {
+
     text-align: center;
     width: 250px;
     height: auto;
