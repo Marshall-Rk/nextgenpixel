@@ -569,15 +569,15 @@ header {
 .mail
 {
 	border-radius: 4px;
-	color: rgb(188, 20, 240);
+	color: rgb(255, 255, 255);
 	margin-bottom: 30px;
 	background-color: rgb(0, 0, 0);
 	padding: 10px;
 }
 .mail:hover
 {
-	color: rgb(0, 0, 0);
-	background-color: rgb(255, 0, 200);
+	color: rgb(255, 0, 212);
+	background-color: rgb(252, 252, 252);
 
 }
 footer {
@@ -776,6 +776,7 @@ footer {
 
  .display-5
  {
+	 text-decoration: underline;
 	color: #000;
 	background: -webkit-linear-gradient(transparent, transparent), url('http://studioleopard.pl/wp-content/uploads/2016/04/wyklikaj_strone.jpg');
 	background: -o-linear-gradient(transparent, transparent);
