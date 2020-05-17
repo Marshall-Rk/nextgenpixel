@@ -46,13 +46,7 @@ ul {
 }
 h2,
 h3,
-a {
-	color: #34495e;
-}
 
-a {
-	text-decoration: none;
-}
 
 
 
@@ -366,7 +360,7 @@ main-nav a {
 
 h2 {
 	
-	text-decoration:  underline;
+	
    display: flex;
    justify-content: center;
 	align-items: center;
@@ -397,8 +391,53 @@ h3:hover
   
 
 
-
-
+.ribbon {
+	font-size: 16px !important;
+   
+   
+	width: 200px;
+	 
+	position: relative;
+	background: #4ddfdf;
+	color: rgb(0, 0, 0);
+	text-align: center;
+	padding: 1em 2em; 
+	margin: 2em auto 3em;
+   }
+   .ribbon:before, .ribbon:after {
+	content: "";
+	position: absolute;
+	display: block;
+	bottom: -1em;
+	border: 1.5em solid #3cafe4;
+	z-index: -1;
+   }
+   .ribbon:before {
+	left: -2em;
+	border-right-width: 1.5em;
+	border-left-color: transparent;
+   }
+   .ribbon:after {
+	right: -2em;
+	border-left-width: 1.5em;
+	border-right-color: transparent;
+   }
+   .ribbon .ribbon-content:before, .ribbon .ribbon-content:after {
+	content: "";
+	position: absolute;
+	display: block;
+	border-style: solid;
+	border-color: #3cbde4 transparent transparent transparent;
+	bottom: -1em;
+   }
+   .ribbon .ribbon-content:before {
+	left: 0;
+	border-width: 1em 0 0 1em;
+   }
+   .ribbon .ribbon-content:after {
+	right: 0;
+	border-width: 1em 1em 0 0;
+   }
 
 
 body {
@@ -711,8 +750,14 @@ header {
 	font-size: 30px;
 	
 }
-
+.display-8
+{
+	text-shadow: 0 0 10px #fff, 0 0 10px #fff, 0 0 20px #e60073, 0 0 20px #e60073, 0 0 20px #e60073, 0 0 20px #e60073, 0 0 20px #e60073;
+	border: 1px black;
+}
   header video {
+	      
+
 	  letter-spacing: 0.5px;
 	  background: #111;
 	  color: #fff;
@@ -773,7 +818,7 @@ header {
 footer {
 	background: rgb(42, 154, 168);
 	background: -webkit-linear-gradient(59deg, rgb(16, 187, 187), #16222A);
-	background: linear-gradient(59deg, rgb(59, 58, 122), rgb(0, 0, 0));
+	background: linear-gradient(59deg, rgb(0, 0, 0), rgb(0, 0, 0));
 	color: white;
 	margin-top:100px;
 	padding:0px;
@@ -936,7 +981,7 @@ footer {
 
 
   .container5{
-	  border: 1px solid;
+	  border: 1px solid cyan;
 	box-shadow: 5px 10px solid #0000;
 	user-select: none;
 	margin:10px auto;
@@ -1160,6 +1205,3 @@ footer {
             -webkit-transition: all 0.3s 1s ease-out;  /* Android 2.1+, Chrome 1-25, iOS 3.2-6.1, Safari 3.2-6  */
                     transition: all 0.3s 1s ease-out;  /* Chrome 26, Firefox 16+, iOS 7+, IE 10+, Opera, Safari 6.1+  */				
 		}
-
-
-		
