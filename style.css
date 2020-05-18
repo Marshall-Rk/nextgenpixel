@@ -380,10 +380,7 @@ h2 {
 
 
 
-h2:hover
-{
-	color: rgb(26, 230, 202);
-}
+
 h3:hover
 {
 	color: rgb(43, 226, 202);
@@ -392,13 +389,13 @@ h3:hover
 
 
 .ribbon {
-	font-size: 16px !important;
+	font-size: 22px !important;
    
-   
+   font-weight: 500;
 	width: 200px;
 	 
 	position: relative;
-	background: #4ddfdf;
+	background:  rgb(209, 141, 209);
 	color: rgb(0, 0, 0);
 	text-align: center;
 	padding: 1em 2em; 
@@ -409,7 +406,7 @@ h3:hover
 	position: absolute;
 	display: block;
 	bottom: -1em;
-	border: 1.5em solid #3cafe4;
+	border: 1.5em solid  rgb(209, 111, 209);
 	z-index: -1;
    }
    .ribbon:before {
@@ -427,7 +424,7 @@ h3:hover
 	position: absolute;
 	display: block;
 	border-style: solid;
-	border-color: #3cbde4 transparent transparent transparent;
+	border-color: #ad3d8c transparent transparent transparent;
 	bottom: -1em;
    }
    .ribbon .ribbon-content:before {
@@ -748,13 +745,9 @@ header {
 
 	color: rgb(192, 189, 189);
 	font-size: 30px;
-	
+	text-decoration: overline underline;
 }
-.display-8
-{
-	text-shadow: 0 0 10px #fff, 0 0 10px #fff, 0 0 20px #e60073, 0 0 20px #e60073, 0 0 20px #e60073, 0 0 20px #e60073, 0 0 20px #e60073;
-	border: 1px black;
-}
+
   header video {
 	      
 
