@@ -390,12 +390,12 @@ h3:hover
 
 .ribbon {
 	font-size: 22px !important;
-   
+   box-shadow: 5px black;
    font-weight: 500;
 	width: 200px;
-	 
+	
 	position: relative;
-	background:  rgb(209, 141, 209);
+	background:  rgb(197, 197, 197);
 	color: rgb(0, 0, 0);
 	text-align: center;
 	padding: 1em 2em; 
@@ -406,7 +406,7 @@ h3:hover
 	position: absolute;
 	display: block;
 	bottom: -1em;
-	border: 1.5em solid  rgb(209, 111, 209);
+	border: 1.5em solid  rgb(48, 47, 47);
 	z-index: -1;
    }
    .ribbon:before {
@@ -424,7 +424,7 @@ h3:hover
 	position: absolute;
 	display: block;
 	border-style: solid;
-	border-color: #ad3d8c transparent transparent transparent;
+	border-color: #292628 transparent transparent transparent;
 	bottom: -1em;
    }
    .ribbon .ribbon-content:before {
@@ -743,7 +743,7 @@ header {
   
 .container p{
 
-	color: rgb(192, 189, 189);
+	color: rgb(102, 101, 101);
 	font-size: 30px;
 	text-decoration: overline underline;
 }
@@ -974,58 +974,57 @@ footer {
 
 
   .container5{
-	  border: 1px solid cyan;
+	  background-color: black;
+	font-family: 'Archivo', sans-serif;
 	box-shadow: 5px 10px solid #0000;
 	user-select: none;
 	margin:10px auto;
 	background-image: url("card design1.jpg");
 	color: #000000;
 	
-	border-radius: 5px;
+	border-radius: 8px;
 	width: 350px;
 	text-align: center;
 	box-shadow: 0 10px 20px -10px rgba(0, 0, 0, 0.75);
   }
   .cover-photo{
 
-	height: 160px;
+	height: 180px;
 	width: 100%;
 	border-radius: 5px 5px 0 0;
   }
-  .profile{
-	height: 120px;
-	width: 120px;
-	border-radius: 50%;
-	margin: 93px 0 0 -175px;
-	border: 1px solid #ffffff;
-	padding: 7px;
-
-  }
+.profile-name
+{
+	margin-top: 20px;
+}
 
  .display-5
  {
+	font-family: 'Archivo', sans-serif;
 	 text-decoration: underline;
 	color: #000;
 	background: -webkit-linear-gradient(transparent, transparent), url('http://studioleopard.pl/wp-content/uploads/2016/04/wyklikaj_strone.jpg');
 	background: -o-linear-gradient(transparent, transparent);
 	-webkit-text-fill-color: transparent;
 	-webkit-background-clip: text;
-	font-size: 30px;
+	font-size: 35px;
 	text-align: center;
  }
 
-  .about{
-	
-	  color: rgb(0, 0, 0);
-  }
+ 
   .profile-name{
 	 color: white;
-	font-size: 25px;
+	font-size: 20px;
 	font-weight: bold;
 	margin-left: 210px;
+	
   }
   .about{
-	margin-top: 35px;
+
+	margin-right: 17px;
+  font-size: 15px;
+	color: rgb(223, 187, 71);
+	margin-bottom: 53px;
 	line-height: 21px;
   }
   button{
