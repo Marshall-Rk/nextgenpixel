@@ -6,6 +6,7 @@
  
 
 *{
+	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   font-size: 18px;
   padding: 0px;
   margin: 0;
@@ -796,10 +797,11 @@ header {
 
 .mail
 {
+	border: 1px solid ;
 	border-radius: 4px;
-	color: rgb(255, 255, 255);
+	color: rgb(224, 178, 26);
 	margin-bottom: 30px;
-	background-color: rgb(0, 0, 0);
+	background-color: rgb(255, 255, 255);
 	padding: 10px;
 }
 .mail:hover
@@ -993,14 +995,12 @@ footer {
 	width: 100%;
 	border-radius: 5px 5px 0 0;
   }
-.profile-name
-{
-	margin-top: 20px;
-}
+
 
  .display-5
  {
-	font-family: 'Archivo', sans-serif;
+	height: 500px;
+	font-family: Arial, Helvetica, sans-serif;
 	 text-decoration: underline;
 	color: #000;
 	background: -webkit-linear-gradient(transparent, transparent), url('http://studioleopard.pl/wp-content/uploads/2016/04/wyklikaj_strone.jpg');
@@ -1013,17 +1013,15 @@ footer {
 
  
   .profile-name{
-	 color: white;
-	font-size: 20px;
-	font-weight: bold;
-	margin-left: 210px;
-	
+
+
   }
   .about{
-
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	
 	margin-right: 17px;
   font-size: 15px;
-	color: rgb(223, 187, 71);
+	color: rgb(204, 169, 53);
 	margin-bottom: 53px;
 	line-height: 21px;
   }
