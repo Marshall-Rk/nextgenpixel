@@ -14,13 +14,15 @@
 }
 
 body {
-	min-height: 100vh;
+	margin: 50px;
+	min-height: 50vh;
 	background-color: black; 
 }
 
 .container {
-	max-width: 100rem auto;
-	margin: 0 auto;
+
+	max-width: 50rem auto;
+	margin: 30px auto;
 	padding: 30px;
 }
 

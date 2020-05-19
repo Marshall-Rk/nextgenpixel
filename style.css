@@ -797,16 +797,16 @@ header {
 
 .mail
 {
-	border: 1px solid ;
+	border: 1px solid rgb(218, 48, 181) ;
 	border-radius: 4px;
 	color: rgb(224, 178, 26);
 	margin-bottom: 30px;
-	background-color: rgb(255, 255, 255);
+	background-color: rgb(0, 0, 0);
 	padding: 10px;
 }
 .mail:hover
 {
-	color: rgb(255, 0, 212);
+	color: rgb(199, 211, 29);
 	background-color: rgb(252, 252, 252);
 
 }
@@ -1021,7 +1021,7 @@ footer {
 	
 	margin-right: 17px;
   font-size: 15px;
-	color: rgb(204, 169, 53);
+	color: rgba(182, 159, 84, 0);
 	margin-bottom: 53px;
 	line-height: 21px;
   }
@@ -1195,3 +1195,185 @@ footer {
             -webkit-transition: all 0.3s 1s ease-out;  /* Android 2.1+, Chrome 1-25, iOS 3.2-6.1, Safari 3.2-6  */
                     transition: all 0.3s 1s ease-out;  /* Chrome 26, Firefox 16+, iOS 7+, IE 10+, Opera, Safari 6.1+  */				
 		}
+
+
+
+
+
+
+
+		  @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,800');
+
+		  @media (min-width: 500px) {
+			.col-sm-6 {
+			  width: 50%;
+			}
+		  }
+		  html, body {
+			height: 100%;
+			min-height: 18em;
+		  }
+		  
+		  .frontend-side {
+			background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/74452/website-code.png");
+		  }
+		  
+		  .uiux-side {
+			background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/74452/website-post-its.png");
+			position: relative;
+		  }
+		  
+		  .split-pane {
+			padding-top: 1em;
+			background-size: cover;
+			background-repeat: no-repeat;
+			background-position: center center;
+			height: 50%;
+			width: 100%;
+			min-height: 9em;
+			font-size: 4em;
+			color: white;
+			font-family: 'Open Sans', sans-serif;
+			  font-weight:300;
+		 
+		  }
+		  @media(min-width: 500px) {
+			.split-pane {
+			  padding-top: 2em;
+			  height: 100%;
+			}
+		  }
+		  .split-pane > div {
+			position: relative;
+			top: 50%;
+			-webkit-transform: translateY(-50%);
+			-ms-transform: translateY(-50%);
+			transform: translateY(-50%);
+			text-align: center;
+		  }
+		  .split-pane > div .text-content {
+			line-height: 1.6em;
+			margin-bottom: 1em;
+		  }
+		  .split-pane > div .text-content .big {
+			font-size: 2.5em;
+		  }
+		  .split-pane > div img {
+			height: 1.3em;
+		  }
+		  @media (max-width: 500px) {
+			.split-pane > div img {
+			  display:none;
+			}
+		  }
+		  .split-pane button, .split-pane a.button {
+			font-family: 'Open Sans', sans-serif;
+			  font-weight:800;
+			background: black;
+			
+			-moz-border-radius: 5px;
+			-webkit-border-radius: 5px;
+			border-radius: 5px;
+			width: 17em;
+			padding: 0.7em;
+			font-size: 0.8em;
+			-moz-transition: all 0.2s ease-out;
+			-o-transition: all 0.2s ease-out;
+			-webkit-transition: all 0.2s ease-out;
+			transition: all 0.2s ease-out;
+			text-decoration: none;
+			color: white;
+			display: inline-block;
+			  cursor: pointer;
+		  }
+		  .split-pane button:hover, .split-pane a.button:hover {
+			text-decoration: none;
+			background-color: white;
+			border-color: white;
+			  cursor: pointer;
+		  }
+		  .uiux-side.split-pane button:hover, .split-pane a.button:hover {
+			color: violet;
+		  }
+		  .frontend-side.split-pane button:hover, .split-pane a.button:hover {
+			color: blue;
+		  }
+		  
+		  #split-pane-or {
+			font-size: 2em;
+			color: white;
+			font-family: 'Open Sans', sans-serif;
+			text-align: center;
+			width: 100%;
+			position: absolute;
+			top: 50%;
+			-webkit-transform: translateY(-50%);
+			-ms-transform: translateY(-50%);
+			transform: translateY(-50%);
+		  }
+		  @media (max-width: 925px) {
+			#split-pane-or {
+			  top:15%;
+			}
+		  }
+		  #split-pane-or > div img {
+			height: 2.5em;
+		  }
+		  @media (max-width: 500px) {
+			#split-pane-or {
+			  position: absolute;
+			  top: 50px;
+			}
+			#split-pane-or > div img {
+			  height:2em;
+			}
+		  }
+		  @media(min-width: 500px) {
+			#split-pane-or {
+			  font-size: 3em;
+			}
+		  }
+		  .big {
+			font-size: 6em;
+		  }
+		  
+		  #slogan {
+			position: absolute;
+			width: 100%;
+			z-index: 100;
+			text-align: center;
+			vertical-align: baseline;
+			top: 0.5em;
+			color: white;
+			font-family: 'Open Sans', sans-serif;
+			font-size: 1.4em;
+		  }
+		  @media(min-width: 500px) {
+			#slogan {
+			  top: 5%;
+			  font-size: 7em;
+			}
+		  }
+		  #slogan img {
+			height: 0.7em;
+		  }
+		  .bold {
+			  text-transform:uppercase;
+		  }
+		  .big {
+			  font-weight:800;
+		  }
+		  .block-left{
+			width:50%;
+			height:100vh;
+			background-color:#BE3144;
+			float:left;
+		
+		  }
+		  .block-right{
+			width:50%;
+			height:9vh;
+			background-color:#9896F1;
+			float:left;
+			margin-bottom: 20px;
+		  }
