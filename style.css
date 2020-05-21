@@ -745,7 +745,7 @@ header {
 .container p{
 text-decoration: none;
 	color: rgb(210, 214, 214);
-	font-size: 20px;
+	font-size: 30px;
 	text-decoration: overline underline;
 }
 
@@ -1503,6 +1503,7 @@ footer {
 
 
 #wrapper{
+	padding-top: 10px;
     width: 250px;
     height: 50px;
     margin:auto;
@@ -1538,6 +1539,7 @@ footer {
 }
 
 .btn.red {
+	
 	background: linear-gradient(to right, #1488cc, #2b32b2);
 	box-shadow: 0 2px 25px rgba(20, 137, 204, 0.5);
 	border-radius: 9px;
