@@ -578,15 +578,16 @@ a:hover {
   width: 100%;
   opacity: .9;
 }
-.intro-title{
-  
+.intro-title
+{
+  font-size: 2px;
 }
 .intro .intro-title {
   
   font-family: Georgia, 'Times New Roman', Times, serif;
   color: rgb(226, 223, 223);
-  font-weight: 500;
-  font-size: 1.5rem;
+  font-weight: 200;
+  font-size: 1rem;
 }
 
 .intro .intro2{
