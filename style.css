@@ -109,7 +109,7 @@ main-nav a {
 	padding-top: .5em;
 	padding-bottom: .5em;
 	
-	background:black;
+	
 	-webkit-box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
 	-moz-box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
 	box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
@@ -609,9 +609,9 @@ text-decoration: none;
 
 .mail
 {
-	border: 1px solid rgb(218, 48, 181) ;
+	border: 1px solid rgb(252, 227, 10) ;
 	border-radius: 4px;
-	color: rgb(224, 178, 26);
+	color: rgb(179, 178, 174);
 	margin-bottom: 30px;
 	background-color: rgb(0, 0, 0);
 	padding: 10px;
@@ -632,7 +632,7 @@ footer {
   }
   
   footer a {
-	color: #fff;
+	color: rgb(201, 230, 36);
 	font-size: 14px;
 	transition-duration: 0.2s;
 	 margin-bottom:5px;
@@ -646,7 +646,7 @@ footer {
   .copy {
 	font-size: 12px;
 	padding: 10px;
-	border-top: 1px solid #FFFFFF;
+	border-top: 1px solid rgb(255, 255, 255);
 	
   }
   
@@ -1431,3 +1431,56 @@ footer {
       transform: translateY(0px);
   }
 }
+
+.typing-slider
+{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	
+	background-color: yellow;
+}
+.output {
+	text-align:center;
+	font-family: 'Source Code Pro', monospace;
+	color:white;
+	h1 {
+	  font-size:30px;
+	}
+  }
+  
+  /* Cursor Styling */
+  
+  .cursor::after {
+	content:'';
+	display:inline-block;
+	margin-left:3px;
+	background-color:white;
+	animation-name:blink;
+	animation-duration:0.5s;
+	animation-iteration-count: infinite;
+  }
+  h1.cursor::after {
+	height:24px;
+	width:13px;
+  }
+  p.cursor::after {
+	height:13px;
+	width:6px;
+  }
+  
+  @keyframes blink {
+	0% {
+	  opacity:1;
+	}
+	49% {
+	  opacity:1;
+	}
+	50% {
+	  opacity:0;
+	}
+	100% {
+	  opacity:0;
+	}
+  }
