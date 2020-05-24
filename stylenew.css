@@ -1,13 +1,4 @@
-/*
-  Theme Name: DevFolio
-  Theme URL: https://bootstrapmade.com/devfolio-bootstrap-portfolio-html-template/
-  Author: BootstrapMade.com
-  License: https://bootstrapmade.com/license/
-*/
 
-/*======================================
-//--//-->   STYLES GENERALES
-======================================*/
 
 body {
   background-color: #f5f5f5;
@@ -20,9 +11,13 @@ h3,
 h4,
 h5,
 h6 {
-  color: #1e1e1e;
+  font: 10PX
+  color: #d1cccc;
 }
-
+.fontit
+{
+  font-size: 10px;
+}
 a {
   color: #1e1e1e;
   transition: all 0.5s ease-in-out;
@@ -599,9 +594,12 @@ a:hover {
 ======================================*/
 
 .intro {
+  
+  font-family: 'Bree Serif', serif;
   height: 100vh;
   position: relative;
   color: #fff;
+  font-size: 1rem;
 }
 
 .intro .intro-content {
@@ -619,13 +617,23 @@ a:hover {
   width: 100%;
   opacity: .9;
 }
-
+.intro-title{
+  
+}
 .intro .intro-title {
-  color: #fff;
-  font-weight: 600;
-  font-size: 3rem;
+  
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: rgb(226, 223, 223);
+  font-weight: 500;
+  font-size: 1.5rem;
 }
 
+.intro .intro2{
+  letter-spacing: 2px;
+  color: rgba(206, 92, 172, 0.87);
+  font-weight: 600;
+  font-size: 27px;
+}
 .intro .intro-subtitle {
   font-size: 1.5rem;
   font-weight: 300;

@@ -32,13 +32,7 @@ body {
 	min-height: 100vh;
 
 }
-ul {
-   background:black;
-   margin-top: 50px;
-  margin-right: 20px;
-  padding-bottom: 0px;
-  list-style: none;
-}
+
 
 .pixel
 {
@@ -71,7 +65,10 @@ h3,
 	display: block;
     
 }
-
+li
+{
+	background-color: rgba(0, 0, 0, 0.404);
+}
 .main-nav a {
   margin-bottom:5px 8px;
   margin:8px;
@@ -1432,55 +1429,8 @@ footer {
   }
 }
 
-.typing-slider
-{
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	height: 100vh;
-	
-	background-color: yellow;
-}
-.output {
-	text-align:center;
-	font-family: 'Source Code Pro', monospace;
-	color:white;
-	h1 {
-	  font-size:30px;
-	}
-  }
-  
-  /* Cursor Styling */
-  
-  .cursor::after {
-	content:'';
-	display:inline-block;
-	margin-left:3px;
-	background-color:white;
-	animation-name:blink;
-	animation-duration:0.5s;
-	animation-iteration-count: infinite;
-  }
-  h1.cursor::after {
-	height:24px;
-	width:13px;
-  }
-  p.cursor::after {
-	height:13px;
-	width:6px;
-  }
-  
-  @keyframes blink {
-	0% {
-	  opacity:1;
-	}
-	49% {
-	  opacity:1;
-	}
-	50% {
-	  opacity:0;
-	}
-	100% {
-	  opacity:0;
-	}
+
+.wrap {
+	width: 800px;
+	margin: 30px auto;
   }
