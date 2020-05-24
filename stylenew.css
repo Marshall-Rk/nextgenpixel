@@ -44,7 +44,9 @@ a:hover {
 .color-text-a {
   color: #4e4e4e;
 }
-
+.navbar
+{  background-color: black;
+}
 .box-shadow,
 .paralax-mf,
 .service-box,
