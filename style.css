@@ -177,13 +177,14 @@ h2 {
   }
 
   p{
+letter-spacing: 2px;
 
 	padding: 20px;
 	display: flex;
    justify-content: center;
 	align-items: center;
 	font-weight: 500;
-	color: blue;
+	color: rgb(248, 24, 229);
   }
 
 
@@ -1486,6 +1487,7 @@ footer {
 	justify-content: center;
   }
   .Aligner-item {
+	color: cyan;
 	width: 60%;
   }
   .col-image {
@@ -1518,5 +1520,4 @@ footer {
 	}
   }
   
-  
-  
+ 
