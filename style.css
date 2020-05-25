@@ -177,7 +177,7 @@ h2 {
   }
 
   p{
-letter-spacing: 2px;
+
 
 	padding: 20px;
 	display: flex;
@@ -1520,4 +1520,19 @@ footer {
 	}
   }
   
- 
+  #masthead {background-color:#2b5093;}
+  #masthead .navbar-nav > li > a {color: rgb(15, 149, 226);}
+  #masthead .navbar-nav > li > a:hover {color:rgb(49, 204, 231)}
+  #content {background-color: #e26fe6;}
+  #content > .container {padding: 1.5em; background: rgb(33, 171, 235);}
+  #footer-widget{padding-top:1.5em}
+  
+  #accordion .card-header a {display: block;  text-decoration: none;}
+  
+  #accordion .card-header a:after {content: '\f068'; font-family: FontAwesome; float: right;}
+  
+  #accordion .card-header a.collapsed:after {content: '\f067';}
+  
+  .card-header h2 {font-size:1.5em;}
+  
+  .card-deck .card{padding:.75em; margin-bottom:.75em;}
