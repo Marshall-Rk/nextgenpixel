@@ -77,7 +77,7 @@
     <div class="table-cell">
       <div class="container">
       </br>
-        
+    <img src="main scren.png" class="img-fluid ${3|rounded-top,rounded-right,rounded-bottom,rounded-left,rounded-circle,|}" alt="">
         <h2 class="intro2">
          UI/UX, WEB AND GRAPHIC DESIGNER, FRONT END DEVELOPER.
         </h2>
@@ -337,42 +337,87 @@
 </br></br>
 <div class="health">
 wow
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+</div></br>
+</br>
 
 <h2  class="ribbon">Portfolio</h2>
+</br>
+
+<p class="hmm">
+  wow
+</p>
+  
+<div>
+
+  
+</div>
+
+<section>
+  <div class="grid-flex">
+    <div class="col col-image" style="background-image: url(6x3--.jpg);">
+    </div>
+    <div class="col col-text">
+      <div class="Aligner-item">
+        <p>&ldquo;I've learned that people will forget what you said, people will forget what you did, but people will never forget how you made them feel.&rdquo;
+          <cite>- Maya Angelou</cite>
+        </p>
+      </div>
+    </div>
+  </div>
+  
+  <div class="grid-flex">
+    <div class="col col-image" style="background-image: url(Flex.jpg);">
+      &nbsp;
+    </div>
+    <div class="col col-text col-left">
+      <div class="Aligner-item">
+        <p>&ldquo;Simple is good.&rdquo;
+          <cite>- Jim Henson</cite>
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="grid-flex">
+    <div class="col col-image" style="background-image: url(card.jpg);">
+      &nbsp;
+    </div>
+    <div class="col col-text">
+      <div class="Aligner-item">
+        <p>&ldquo;Everybody has a plan until they get punched in the mouth.&rdquo;
+          <cite>- Mike Tyson</cite>
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="grid-flex">
+    <div class="col col-image" style="background-image: url(letterhead3.jpg);">
+      &nbsp;
+    </div>
+    <div class="col col-text col-left">
+      <div class="Aligner-item">
+        <p>&ldquo;We are what we pretend to be, so we must be careful about what we pretend to be&rdquo;
+          <cite>- Kurt Vonnegut, Jr.</cite>
+        </p>
+      </div>
+    </div>
+  </div>
+
+  
+    </div>
+  </div>
+</section>
+ 
 
 
 
-</br></br>
+
+
+
+
+
+</br>
 <footer class="mainfooter" role="contentinfo" data-aos="">
   <div class="footer-middle">
     <div class="container">
@@ -438,7 +483,25 @@ wow
   }, 2000);
 });
     AOS.init();
-    baguetteBox.run('.tz-gallery');
+    $('section.awSlider .carousel').carousel({
+	pause: "hover",
+  interval: 2000
+});
+
+var startImage = $('section.awSlider .item.active > img').attr('src');
+$('section.awSlider').append('<img src="' + startImage + '">');
+
+$('section.awSlider .carousel').on('slid.bs.carousel', function () {
+ var bscn = $(this).find('.item.active > img').attr('src');
+	$('section.awSlider > img').attr('src',bscn);
+});
+
+
+/* 
+Philips ambilight tv
+Üzerine gleince duruyor slide
+*/
+   
   </script>
 </body>
 
