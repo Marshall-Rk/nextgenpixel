@@ -1332,7 +1332,7 @@ footer {
   }
   
   footer a {
-	color: rgb(242, 245, 56);;
+	color: rgb(56, 245, 204);;
 	font-size: 14px;
 	transition-duration: 0.2s;
 	 margin-bottom:5px;
@@ -1601,7 +1601,7 @@ footer {
 	  border-radius: 7px;
 	display: block;
 	font-size: 1rem;
-	background: #e7dc38;
+	background: #38e7d8;
 	
 	padding: 0.75rem 1rem;
 	color: rgb(0, 0, 0);
