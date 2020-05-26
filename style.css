@@ -1542,6 +1542,7 @@ footer {
 
 
   .cardf {
+	  text-align: center;
 	  background-color: rgb(15, 15, 15);
 	flex: 1 1 50%;
 	position: relative;
@@ -1595,14 +1596,14 @@ footer {
   }
   
   .buttonf {
-	 display: flex;
-	justify-content: center;
-	padding: 30px 30px 110px;
-	  border-radius: 7px;
+
+	width: 155px;
+	  border-radius: 25px;
 	display: block;
 	font-size: 1rem;
-	background: #3898e7;
-	
+	background-image: linear-gradient(#27e1ee,  #40ccf7);
+	top: 50%;
+	left: 50%;
 	padding: 0.75rem 1rem;
 	color: rgb(0, 0, 0);
 	font-weight: 700;
@@ -1626,4 +1627,3 @@ footer {
   .fa {
 	margin-right: 0.25rem;
   }
-  

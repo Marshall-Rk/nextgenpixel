@@ -1,9 +1,6 @@
 
 
-body {
-  background-color: #f5f5f5;
-  color: #4e4e4e;
-}
+
 
 h1,
 h2,
@@ -555,7 +552,7 @@ a:hover {
 ======================================*/
 
 .intro {
-  
+  overflow-x: hidden;
   font-family: 'Bree Serif', serif;
   height: 100vh;
   position: relative;
@@ -585,16 +582,17 @@ a:hover {
 .intro .intro-title {
   
   font-family: Georgia, 'Times New Roman', Times, serif;
-  color: rgb(226, 223, 223);
+  color: rgb(238, 132, 132);
   font-weight: 200;
   font-size: 1rem;
 }
 
 .intro .intro2{
   letter-spacing: 2px;
-  color: rgba(206, 92, 172, 0.87);
+  color: rgba(0, 0, 0, 0.87);
   font-weight: 600;
   font-size: 27px;
+  background-color: rgba(255, 255, 255, 0.164);
 }
 .intro .intro-subtitle {
   font-size: 1.5rem;
