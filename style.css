@@ -259,7 +259,7 @@ body {
 	position: relative;
 	border-radius: 6px;
 	overflow: hidden;
-	background-color: #000000;
+	background-color: #a3a1a1;
 	border: 0px;
 	transition: all 0.3s ease-in-out;
   }
@@ -1323,7 +1323,7 @@ text-decoration: none;
 
 
 footer {
-	background: rgb(42, 154, 168);
+	background: rgb(21, 211, 236);
 	background: -webkit-linear-gradient(59deg, rgb(16, 187, 187), #16222A);
 	background: linear-gradient(59deg, rgb(0, 0, 0), rgb(0, 0, 0));
 	color: rgb(240, 35, 188);
@@ -1332,7 +1332,7 @@ footer {
   }
   
   footer a {
-	color: rgb(56, 245, 204);;
+	color: rgb(26, 181, 243);;
 	font-size: 14px;
 	transition-duration: 0.2s;
 	 margin-bottom:5px;
@@ -1554,7 +1554,7 @@ footer {
   }
   
   .cardf h1 {
-	  font-size: 25px;
+	  font-size: 20px;
 	margin: 10px;
   }
   
@@ -1596,7 +1596,10 @@ footer {
   }
   
   .buttonf {
-
+	position: relative;
+	display:inline-block;
+	left: 50%;
+	transform: translateX(-50%);
 	width: 155px;
 	  border-radius: 25px;
 	display: block;
@@ -1627,3 +1630,21 @@ footer {
   .fa {
 	margin-right: 0.25rem;
   }
+.card-block a{
+	border-width: 50%;
+	border: 1px solid rgb(226, 226, 226);
+	color: rgb(0, 0, 0);
+	font-size: 18px;
+	font-weight: 500;
+}
+.read-more
+{
+	position: relative;
+	display: inline-block ;
+	left: 50%;
+	transform: translateX(-50%);
+}
+.sneak
+{
+	margin: 5px;
+}
