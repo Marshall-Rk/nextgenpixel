@@ -307,9 +307,49 @@
 
     </div>
   </div>
-</br></br>
 
- 
+
+<div class="sectiontitle">
+  
+  <h2>Projects statistics</h2>
+  <span class="headerLine"></span>
+</div>
+<div id="projectFacts" class="sectionClass">
+  <div class="fullWidth eight columns">
+      <div class="projectFactsWrap ">
+          <div class="item wow fadeInUpBig animated animated" data-number="12" style="visibility: visible;">
+              <i class=""></i>
+              <p id="number1" class="number">5</p>
+              <span></span>
+              <p>Happy clients</p>
+          </div>
+          <div class="item wow fadeInUpBig animated animated" data-number="55" style="visibility: visible;">
+              <i class=""></i>
+              <p id="number2" class="number">55</p>
+              <span></span>
+              <p>Projects Done</p>
+          </div>
+          <div class="item wow fadeInUpBig animated animated" data-number="359" style="visibility: visible;">
+              <i class=""></i>
+              <p id="number3" class="number">3</p>
+              <span></span>
+              <p>Website's Made</p>
+          </div>
+          <div class="item wow fadeInUpBig animated animated" data-number="246" style="visibility: visible;">
+              <i class=""></i>
+              <p id="number4" class="number">3</p>
+              <span></span>
+              <p>Experience</p>
+          </div>
+      </div>
+  </div>
+</div>
+
+
+
+
+
+</br>
 <div class='split-pane block-left col-xs-12 col-sm-6 uiux-side' id="card1">
     <div>
     
@@ -342,6 +382,72 @@
 wow
 </div></br>
 </br>
+<div class="sectiontitle">
+  <span class="headerLine"></span>
+  <h2 font-size="5px">Skills In</h2>
+  <h4>Designing</h4>
+  <span class="headerLine"></span>
+</div>
+<div id="projectFacts" class="sectionClass">
+  <div class="fullWidth eight columns">
+      <div class="projectFactsWrap ">
+          <div class="item wow fadeInUpBig animated animated" data-number="12" style="visibility: visible;">
+              <i class=""></i>
+             
+              <p>Adobe Photoshop</p>
+          </div>
+          <div class="item wow fadeInUpBig animated animated" data-number="55" style="visibility: visible;">
+              <i class=""></i>
+              
+              <p>Adobe Illustrator</p>
+          </div>
+          <div class="item wow fadeInUpBig animated animated" data-number="359" style="visibility: visible;">
+              <i class=""></i>
+              
+              <p>Adobe Premiere Pro</p>
+          </div>
+          <div class="item wow fadeInUpBig animated animated" data-number="246" style="visibility: visible;">
+              <i class=""></i>
+              
+              <p>Adobe Lightroom</p>
+          </div>
+      </div>
+  </div>
+</div>
+<div class="sectiontitle">
+  <span class="headerLine"></span>
+  <h2 font-size="5px">Skills In</h2>
+  <h4>Development</h4>
+  <span class="headerLine"></span>
+</div>
+<div id="projectFacts" class="sectionClass">
+  <div class="fullWidth eight columns">
+      <div class="projectFactsWrap ">
+          <div class="item wow fadeInUpBig animated animated" data-number="12" style="visibility: visible;">
+              <i class=""></i>
+             
+              <p>Adobe Photoshop</p>
+          </div>
+          <div class="item wow fadeInUpBig animated animated" data-number="55" style="visibility: visible;">
+              <i class=""></i>
+              
+              <p>Adobe Illustrator</p>
+          </div>
+          <div class="item wow fadeInUpBig animated animated" data-number="359" style="visibility: visible;">
+              <i class=""></i>
+              
+              <p>Premiere Pro</p>
+          </div>
+          <div class="item wow fadeInUpBig animated animated" data-number="246" style="visibility: visible;">
+              <i class=""></i>
+              
+              <p>Adobe Lightroom</p>
+          </div>
+      </div>
+  </div>
+</div>
+
+
 
 <h2  class="ribbon">Portfolio</h2>
 </br>
@@ -494,7 +600,26 @@ $('section.awSlider .carousel').on('slid.bs.carousel', function () {
 Philips ambilight tv
 Üzerine gleince duruyor slide
 */
-   
+document.addEventListener("DOMContentLoaded", () => {
+ function counter(id, start, end, duration) {
+  let obj = document.getElementById(id),
+   current = start,
+   range = end - start,
+   increment = end > start ? 1 : -1,
+   step = Math.abs(Math.floor(duration / range)),
+   timer = setInterval(() => {
+    current += increment;
+    obj.textContent = current;
+    if (current == end) {
+     clearInterval(timer);
+    }
+   }, step);
+ }
+ counter("count1", 0, 5,);
+ counter("count2", 0, 50,);
+ counter("count3", 0, 3,);
+});
+ 
   </script>
 </body>
 
