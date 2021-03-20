@@ -1669,14 +1669,14 @@ body:after {
   top: 0;
   padding: 0;
   bottom: 0;
-  padding: 10px;
+  padding: 8px;
   -webkit-transform: translateX(-101%);
   -ms-transform: translateX(-101%);
   transform: translateX(-101%);
   -webkit-transition: .3s all ease;
   -o-transition: .3s all ease;
   transition: .3s all ease;
-  background: #007bff; }
+  background: #262e36; }
   .team-member .social li {
     list-style: none; }
     .team-member .social li a {
@@ -1696,7 +1696,7 @@ body:after {
   font-size: .8rem;
   letter-spacing: .05rem; }
 
-.team-member:hover .social {
+.team-member .social {
   -webkit-transform: translateX(0%);
   -ms-transform: translateX(0%);
   transform: translateX(0%); }
@@ -2155,3 +2155,49 @@ figure figcaption {
      flex: 0 0 50%;
   }
 }
+
+
+
+ul.social-set {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  height: auto;
+  width: auto;
+}
+ul.social-set li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+/* Font Awesome icons */
+a.sociali {
+  border-radius: 20%;
+  font-size: 2em;
+  line-height: 1.2em;
+  padding: 10px;
+  background: #bfc1c2;
+  color: rgb(22, 25, 26);
+  margin-right: 10px;
+  margin-bottom: 10px !important;
+  padding-bottom: 10px !important;
+}
+
