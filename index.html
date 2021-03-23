@@ -27,6 +27,15 @@
     <link rel="shortcut icon" type="image/x-icon" href="images/1.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
+    <link href='https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css'>
+    <script src='https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.bundle.min.js'></script>
+    <link href='https://use.fontawesome.com/releases/v5.8.1/css/all.css'>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+
+    
+    <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
+
 
   </head>
   <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
@@ -84,7 +93,25 @@
       </div>
       
     </header>
+    <a id="button"></a>
+    <script>
+      var btn = $('#button');
 
+$(window).scroll(function() {
+  if ($(window).scrollTop() > 300) {
+    btn.addClass('show');
+  } else {
+    btn.removeClass('show');
+  }
+});
+
+btn.on('click', function(e) {
+  e.preventDefault();
+  $('html, body').animate({scrollTop:0}, '300');
+});
+
+
+    </script>
   
      
     <div class="site-blocks-cover overlay" style="background-image: url(images/hero_2.png);" data-aos="fade" id="home-section">
@@ -245,7 +272,7 @@
             <div class="team-member">
               <figure>
                 <ul class="social">
-                  <li><a href="https://www.instagram.com/nextgenpixel/" target="_blank"><span class="icon-instagram"></span></a></li>
+                  <li><a href="https://www.instagram.com/nextgenpixel/" target="_blank"></a><span class="icon-instagram"></span></a></li>
                   <li><a href="mailto:rajkamalgautam2001@gmail.com" target="_blank"><span class="icon-mail_outline"></span></a></li>
                   <li><a href="https://www.google.com/search?q=Nextgenpixel&oq=NEx&aqs=chrome.0.69i59j69i60j69i61l2j69i60j69i57j0i273.812j1j4&sourceid=chrome&ie=UTF-8" target="_blank"><span class="icon-google"></span></a></li>
                   <li><a href="https://www.facebook.com/nextgenpixel.official" target="_blank"><span class="icon-facebook"></span></a></li>
@@ -285,6 +312,125 @@
         
       </div>
     </section>
+
+
+    <section class="site-section border-bottom " id="blog-section">
+      <div class="container ">
+        <div class="row mb-5">
+          <div class="col-12 text-center" data-aos="fade">
+            <h2 class="section-title mb-3" style="color: rgb(10, 28, 85); text-decoration: underline;">OUR CLIENTS</h2>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-6 col-lg-3 mb-4 mb-lg-4" data-aos="fade-up" data-aos-delay="">
+            <div class="h-entry">
+            
+                <img src="clientlogo/akaryamha.jpg" style="border:1px solid rgb(134, 134, 134);" alt="Image" class="img-fluid">
+             
+            
+            </div> 
+          </div>
+          <div class="col-md-6 col-lg-3 mb-4 mb-lg-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="h-entry">
+            
+                <img src="clientlogo/akarcompany.jpg" style="border:1px solid rgb(134, 134, 134);" alt="Image" class="img-fluid">
+              
+           
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3 mb-4 mb-lg-4" data-aos="fade-up" data-aos-delay="200">
+            <div class="h-entry">
+            
+                <img src="clientlogo/nice.jpg" style="border:1px solid rgb(134, 134, 134);" alt="Image" class="img-fluid">
+            
+         
+            </div> 
+          </div>
+          <div class="col-md-6 col-lg-3 mb-4 mb-lg-4" data-aos="fade-up" data-aos-delay="200">
+            <div class="h-entry">
+            
+                <img src="clientlogo/recap.jpg" style="border:1px solid rgb(134, 134, 134);" alt="Image" class="img-fluid">
+            
+         
+            </div> 
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-6 col-lg-3 mb-4 mb-lg-4" data-aos="fade-up" data-aos-delay="">
+            <div class="h-entry">
+            
+                <img src="clientlogo/mrfresh.jpg" style="border:1px solid rgb(134, 134, 134);" alt="Image" class="img-fluid">
+          
+            
+            </div> 
+          </div>
+          <div class="col-md-6 col-lg-3 mb-4 mb-lg-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="h-entry">
+              
+                <img src="clientlogo/frolik.jpg" style="border:1px solid rgb(134, 134, 134);" alt="Image" class="img-fluid">
+           
+           
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3 mb-4 mb-lg-4" data-aos="fade-up" data-aos-delay="200">
+            <div class="h-entry">
+              
+                <img src="clientlogo/cks.jpg" alt="Image" class="img-fluid">
+            
+         
+            </div> 
+          </div>
+       
+          <div class="col-md-6 col-lg-3 mb-4 mb-lg-4" data-aos="fade-up" data-aos-delay="200">
+            <div class="h-entry">
+             
+                <img src="clientlogo/TheMerchStore..jpg" style="border:1px solid rgb(134, 134, 134);" alt="Image" class="img-fluid">
+            
+         
+            </div> 
+          </div>
+          <div class="col-md-6 col-lg-3 mb-4 mb-lg-4" data-aos="fade-up" data-aos-delay="200">
+            <div class="h-entry">
+             
+                <img src="clientlogo/stretch kalam.jpg" style="border:1px solid rgb(134, 134, 134);" alt="Image" class="img-fluid">
+            
+         
+            </div> 
+          </div>
+          <div class="col-md-6 col-lg-3 mb-4 mb-lg-4" data-aos="fade-up" data-aos-delay="200">
+            <div class="h-entry">
+          
+                <img src="clientlogo/guide.jpg" style="border:1px solid rgb(134, 134, 134);" alt="Image" class="img-fluid">
+            
+         
+            </div> 
+          </div>
+          
+
+          <div class="col-md-6 col-lg-3 mb-4 mb-lg-4" data-aos="fade-up" data-aos-delay="200">
+            <div class="h-entry">
+          
+                <img src="clientlogo/velo.jpg" style="border:1px solid rgb(134, 134, 134);" alt="Image" class="img-fluid">
+            
+         
+            </div> 
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+  
+
+
+
+
+
+
+
+
 
     <section class="site-section" id="portfolio-section">
       
@@ -393,6 +539,10 @@
       </div>
 
     </section>
+    
+
+
+
     
   
     <section class="site-section border-bottom bg-light" id="services-section">
@@ -827,8 +977,19 @@
         
       </div>
     </section>
+    
 
-      
+         
+    
+
+    
+
+
+
+
+
+
+
     
 
     <section class="site-section" id="blog-section">
@@ -842,7 +1003,7 @@
         <div class="row">
           <div class="col-md-6 col-lg-4 mb-4 mb-lg-4" data-aos="fade-up" data-aos-delay="">
             <div class="h-entry">
-              <a href="https://www.instagram.com/nextgenpixel/" target="_blank">
+              <a href="https://www.instagram.com/nextgenpixel/" target="_blank"></a>
                 <img src="images/img_1.jpg" alt="Image" class="img-fluid">
               </a>
             
@@ -850,7 +1011,7 @@
           </div>
           <div class="col-md-6 col-lg-4 mb-4 mb-lg-4" data-aos="fade-up" data-aos-delay="100">
             <div class="h-entry">
-              <a href="https://www.instagram.com/nextgenpixel/" target="_blank">
+              <a href="https://www.instagram.com/nextgenpixel/" target="_blank"></a>
                 <img src="images/box.jpg" alt="Image" class="img-fluid">
               </a>
            
@@ -858,7 +1019,7 @@
           </div>
           <div class="col-md-6 col-lg-4 mb-4 mb-lg-4" data-aos="fade-up" data-aos-delay="200">
             <div class="h-entry">
-              <a href="https://www.instagram.com/nextgenpixel/" target="_blank">
+              <a href="https://www.instagram.com/nextgenpixel/" target="_blank"></a>
                 <img src="images/img_14.jpg" alt="Image" class="img-fluid">
               </a>
          
@@ -870,7 +1031,7 @@
         <div class="row">
           <div class="col-md-6 col-lg-4 mb-4 mb-lg-4" data-aos="fade-up" data-aos-delay="">
             <div class="h-entry">
-              <a href="https://www.instagram.com/nextgenpixel/" target="_blank">
+              <a href="https://www.instagram.com/nextgenpixel/" target="_blank"></a>
                 <img src="images/design0.jpg" alt="Image" class="img-fluid">
               </a>
             
@@ -878,7 +1039,7 @@
           </div>
           <div class="col-md-6 col-lg-4 mb-4 mb-lg-4" data-aos="fade-up" data-aos-delay="100">
             <div class="h-entry">
-              <a href="https://www.instagram.com/nextgenpixel/" target="_blank">
+              <a href="https://www.instagram.com/nextgenpixel/" target="_blank"></a>
                 <img src="images/4.jpg" alt="Image" class="img-fluid">
               </a>
            
@@ -886,7 +1047,7 @@
           </div>
           <div class="col-md-6 col-lg-4 mb-4 mb-lg-4" data-aos="fade-up" data-aos-delay="200">
             <div class="h-entry">
-              <a href="https://www.instagram.com/nextgenpixel/" target="_blank">
+              <a href="https://www.instagram.com/nextgenpixel/" target="_blank"></a>
                 <img src="images/res.jpg" alt="Image" class="img-fluid">
               </a>
          
@@ -1026,9 +1187,7 @@
 
 
 
-
-
-
+    
 
 
 
@@ -1086,6 +1245,14 @@
   <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3763.1751270904815!2d72.82706941421793!3d19.404837846597697!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7a9006ab21fa9%3A0xc1ad72ecef9a93fc!2sNextgenpixel!5e0!3m2!1sen!2sin!4v1616246961304!5m2!1sen!2sin" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
 
 
+
+
+
+
+
+
+
+  
     <footer class="site-footer">
       <div class="container">
         <div class="row">
