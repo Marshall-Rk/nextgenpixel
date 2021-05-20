@@ -1138,18 +1138,18 @@ btn.on('click', function(e) {
 
             
 
-            <form action="mailto:rajkamalgautam2001@gmail.com"  method="GET" class="p-5 bg-white">
+            <form method="POST" id="frmSubmit" class="p-5 bg-white">
               
-              <h2 class="h4 text-black mb-5">Contact Form</h2> 
+              <h2 class="h4 text-black mb-5">GET IN TOUCH!</h2> 
 
               <div class="row form-group">
                 <div class="col-md-6 mb-3 mb-md-0">
                   <label class="text-black" for="fname">First Name</label>
-                  <input type="text" id="fname" class="form-control">
+                  <input type="text" id="fname" class="form-control" name="fname" required>
                 </div>
                 <div class="col-md-6">
                   <label class="text-black" for="lname">Last Name</label>
-                  <input type="text" id="lname" class="form-control">
+                  <input type="text" id="lname" class="form-control" name="lname" required>
                 </div>
               </div>
 
@@ -1157,7 +1157,7 @@ btn.on('click', function(e) {
                 
                 <div class="col-md-12">
                   <label class="text-black" for="email">Email</label> 
-                  <input type="email" id="email" class="form-control">
+                  <input type="email" id="email" class="form-control" name="email" required>
                 </div>
               </div>
 
@@ -1165,7 +1165,7 @@ btn.on('click', function(e) {
                 
                 <div class="col-md-12">
                   <label class="text-black" for="subject">Subject</label> 
-                  <input type="subject" id="subject" class="form-control">
+                  <input type="subject" id="subject" class="form-control" name="subject" required>
                 </div>
               </div>
 
@@ -1178,12 +1178,33 @@ btn.on('click', function(e) {
 
               <div class="row form-group">
                 <div class="col-md-12">
-                  <input type="submit" value="Send Message" class="btn btn-primary btn-md text-white">
+                  <input type="submit" value="Send Message" id="btnSubmit" class="btn btn-primary btn-md text-white">
                 </div>
               </div>
 
   
             </form>
+            <script>
+              jQuery('#frmSubmit').on('submit',function(e){
+              e.preventDefault();
+              jQuery('#msg').html('Please wait...');
+              jQuery('#btnSubmit').attr('disabled',true);
+              jQuery.ajax({
+                url:'https://script.google.com/macros/s/AKfycbxm8Pl0MOR1Fg0xWpHvcnp3HljwYpjovfr_6Y53Fvp6sW5yzUufNQxt4TFQP74H01STjw/exec',
+                type:'post',
+                data:jQuery('#frmSubmit').serialize(),
+                success:function(result){
+                  jQuery('#frmSubmit')[0].reset();
+                alert('Form has been Submitted!');
+                  jQuery('#btnSubmit').attr('disabled',false);
+                  //window.location.href='';
+                }
+              });
+              });
+              </script>
+
+
+
           </div>
           
         </div>
