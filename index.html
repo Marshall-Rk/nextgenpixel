@@ -8,7 +8,7 @@
     
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
     <link rel="stylesheet" href="fonts/icomoon/style.css">
-
+  
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/jquery-ui.css">
     <link rel="stylesheet" href="css/owl.carousel.min.css">
@@ -79,7 +79,7 @@
                 <li><a href="#testimonials-section" class="nav-link">Testimonials</a></li>
                 <li><a href="#why-section" class="nav-link">why us?</a></li>
 
-                <li><a href="#contact-section" class="nav-link">Contact</a></li>
+                <li><a href="contactus.html" class="nav-link">Contact</a></li>
 
                
               </ul>
@@ -134,7 +134,7 @@ btn.on('click', function(e) {
               </button>
               <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                 <a class="dropdown-item" href="design.html">Designs</a>
-                <a class="dropdown-item" href="videos.html">UI/Videos</a>
+                <a class="dropdown-item" href="videos.html">Videos</a>
                 <a class="dropdown-item" href="website.html">Websites</a>
                 <a class="dropdown-item" href="email.html">Email-Marketing</a>
               </div>
@@ -319,7 +319,7 @@ btn.on('click', function(e) {
           <div class="col-lg-6">
 
             <div class="mb-5" data-aos="fade-up" data-aos-delay="100">
-              <h3 class="text-black h3 mb-4">Who am i?</h3>
+              <h3 class="text-black h3 ">Who am i?</h3>
               <div class="mb-4">
                 <ul class="list-unstyled  ">
                   <li>•Energetic Web Developer & Graphic Designer with 2.3years of previous experience in the field. Freelance UI Designer, Social Media / Email marketer.</li>
@@ -633,7 +633,7 @@ Professionally, this tool can be your one stop solution for all your E-mail Mark
       <div class="container">
         <div class="row mb-5">
           <div class="col-12 text-center" data-aos="fade">
-           <h2 class="section-title mb-3">Finplan Projects</h2>
+           <h2 class="section-title mb-3" >Finplan Projects</h2>
           </div>
         </div>
 
@@ -1478,81 +1478,7 @@ Professionally, this tool can be your one stop solution for all your E-mail Mark
     </br>
 
 
-        <div class="row">
-          <div class="col-md-12 mb-5">
-
-            
-
-            <form method="POST" id="frmSubmit" class="p-5 bg-white">
-              
-              <h2 class="h4 text-black mb-5">GET IN TOUCH!</h2> 
-
-              <div class="row form-group">
-                <div class="col-md-6 mb-3 mb-md-0">
-                  <label class="text-black" for="fname">First Name</label>
-                  <input type="text" id="fname" class="form-control" name="fname" required>
-                </div>
-                <div class="col-md-6">
-                  <label class="text-black" for="lname">Last Name</label>
-                  <input type="text" id="lname" class="form-control" name="lname" required>
-                </div>
-              </div>
-
-              <div class="row form-group">
-                
-                <div class="col-md-12">
-                  <label class="text-black" for="email">Email</label> 
-                  <input type="email" id="email" class="form-control" name="email" required>
-                </div>
-              </div>
-
-              <div class="row form-group">
-                
-                <div class="col-md-12">
-                  <label class="text-black" for="subject">Subject</label> 
-                  <input type="subject" id="subject" class="form-control" name="subject" required>
-                </div>
-              </div>
-
-              <div class="row form-group">
-                <div class="col-md-12">
-                  <label class="text-black" for="message">Message</label> 
-                  <textarea name="message" id="message" cols="30" rows="7" class="form-control" placeholder="Write your notes or questions here..."></textarea>
-                </div>
-              </div>
-
-              <div class="row form-group">
-                <div class="col-md-12">
-                  <input type="submit" value="Send Message" id="btnSubmit" class="btn btn-primary btn-md text-white">
-                </div>
-              </div>
-
-  
-            </form>
-            <script>
-              jQuery('#frmSubmit').on('submit',function(e){
-              e.preventDefault();
-              jQuery('#msg').html('Please wait...');
-              jQuery('#btnSubmit').attr('disabled',true);
-              jQuery.ajax({
-                url:'https://script.google.com/macros/s/AKfycbxm8Pl0MOR1Fg0xWpHvcnp3HljwYpjovfr_6Y53Fvp6sW5yzUufNQxt4TFQP74H01STjw/exec',
-                type:'post',
-                data:jQuery('#frmSubmit').serialize(),
-                success:function(result){
-                  jQuery('#frmSubmit')[0].reset();
-                alert('Form has been Submitted!');
-                  jQuery('#btnSubmit').attr('disabled',false);
-                  //window.location.href='';
-                }
-              });
-              });
-              </script>
-
-
-
-          </div>
-          
-        </div>
+        
       </div>
     </section>
 
