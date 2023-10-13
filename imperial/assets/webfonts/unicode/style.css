@@ -1,0 +1,257 @@
+@font-face {
+  font-family: 'unicode';
+  src:  url('fonts/unicode.eot');
+  src:  url('fonts/unicode.eot') format('embedded-opentype'),
+    url('fonts/unicode.ttf') format('truetype'),
+    url('fonts/unicode.woff') format('woff'),
+    url('fonts/unicode.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="unicode-"], [class*=" unicode-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'unicode' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.unicode-hotel:before {
+  content: "\e900";
+}
+.unicode-bed:before {
+  content: "\e901";
+}
+.unicode-bathroom:before {
+  content: "\e902";
+}
+.unicode-garage:before {
+  content: "\e903";
+}
+.unicode-rent:before {
+  content: "\e904";
+}
+.unicode-for-rent:before {
+  content: "\e905";
+}
+.unicode-list:before {
+  content: "\e906";
+}
+.unicode-reward:before {
+  content: "\e907";
+}
+.unicode-real-estate:before {
+  content: "\e908";
+}
+.unicode-seller:before {
+  content: "\e909";
+}
+.unicode-home:before {
+  content: "\e90a";
+}
+.unicode-contact:before {
+  content: "\e90b";
+}
+.unicode-payment:before {
+  content: "\e90c";
+}
+.unicode-pin:before {
+  content: "\e90d";
+}
+.unicode-budget:before {
+  content: "\e90e";
+}
+.unicode-link:before {
+  content: "\e90f";
+}
+.unicode-house:before {
+  content: "\e910";
+}
+.unicode-man:before {
+  content: "\e911";
+}
+.unicode-invention:before {
+  content: "\e912";
+}
+.unicode-investment:before {
+  content: "\e913";
+}
+.unicode-sketch:before {
+  content: "\e914";
+}
+.unicode-seller-1:before {
+  content: "\e915";
+}
+.unicode-increase:before {
+  content: "\e916";
+}
+.unicode-search:before {
+  content: "\e917";
+}
+.unicode-investor:before {
+  content: "\e918";
+}
+.unicode-handshake:before {
+  content: "\e919";
+}
+.unicode-strategy:before {
+  content: "\e91a";
+}
+.unicode-diagram:before {
+  content: "\e91b";
+}
+.unicode-money:before {
+  content: "\e91c";
+}
+.unicode-tick:before {
+  content: "\e91d";
+}
+.unicode-compare:before {
+  content: "\e91e";
+}
+.unicode-compare-1:before {
+  content: "\e91f";
+}
+.unicode-prize:before {
+  content: "\e920";
+}
+.unicode-medal:before {
+  content: "\e921";
+}
+.unicode-user:before {
+  content: "\e922";
+}
+.unicode-lock:before {
+  content: "\e923";
+}
+.unicode-checked:before {
+  content: "\e924";
+}
+.unicode-mail:before {
+  content: "\e925";
+}
+.unicode-open:before {
+  content: "\e926";
+}
+.unicode-alarm:before {
+  content: "\e927";
+}
+.unicode-bell:before {
+  content: "\e928";
+}
+.unicode-dashboard:before {
+  content: "\e929";
+}
+.unicode-calendar:before {
+  content: "\e92a";
+}
+.unicode-star:before {
+  content: "\e92b";
+}
+.unicode-forward:before {
+  content: "\e92c";
+}
+.unicode-resume:before {
+  content: "\e92d";
+}
+.unicode-share:before {
+  content: "\e92e";
+}
+.unicode-percentage:before {
+  content: "\e92f";
+}
+.unicode-settings:before {
+  content: "\e930";
+}
+.unicode-eye:before {
+  content: "\e931";
+}
+.unicode-heart:before {
+  content: "\e932";
+}
+.unicode-house-1:before {
+  content: "\e933";
+}
+.unicode-payment-1 .path1:before {
+  content: "\e934";
+  color: rgb(0, 0, 0);
+  opacity: 0.942;
+}
+.unicode-payment-1 .path2:before {
+  content: "\e935";
+  margin-left: -1em;
+  color: rgb(0, 0, 0);
+  opacity: 0.945;
+}
+.unicode-code-signs:before {
+  content: "\e936";
+}
+.unicode-setting-lines:before {
+  content: "\e937";
+}
+.unicode-question:before {
+  content: "\e938";
+}
+.unicode-email:before {
+  content: "\e939";
+}
+.unicode-chat-comment-oval-speech-bubble-with-text-lines:before {
+  content: "\e93a";
+}
+.unicode-house-2:before {
+  content: "\e93b";
+}
+.unicode-zoom-in:before {
+  content: "\e93c";
+}
+.unicode-arrow:before {
+  content: "\e93d";
+}
+.unicode-villa:before {
+  content: "\e93e";
+}
+.unicode-appartments:before {
+  content: "\e93f";
+}
+.unicode-office:before {
+  content: "\e940";
+}
+.unicode-office-1:before {
+  content: "\e941";
+}
+.unicode-trophy:before {
+  content: "\e942";
+}
+.unicode-briefcase:before {
+  content: "\e943";
+}
+.unicode-idea:before {
+  content: "\e944";
+}
+.unicode-direct-download:before {
+  content: "\e945";
+}
+.unicode-folder-management:before {
+  content: "\e946";
+}
+.unicode-quote:before {
+  content: "\e947";
+}
+.unicode-play-button-arrowhead:before {
+  content: "\e948";
+}
+.unicode-shop:before {
+  content: "\e949";
+}
+.unicode-appartment:before {
+  content: "\e94a";
+}

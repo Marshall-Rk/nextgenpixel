@@ -1,0 +1,1220 @@
+﻿<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Meta Tag -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Uniland - Real Estate HTML5 Template">
+    <meta name="keywords" content="real estate, property, property search, agent, apartments, booking, business, idx, housing, real estate agency, rental">
+    <meta name="author" content="unicoder">
+    <title>Uniland - Real Estate HTML5 Template</title>
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="assets/images/favicon.ico">
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="../../css2?family=Sen:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="../../css2-1?family=Barlow:ital,wght@0,300;0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
+
+    <!-- Required style of the theme -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/bootstrap-select.min.css">
+    <link rel="stylesheet" href="assets/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/animate.min.css">
+    <link rel="stylesheet" href="assets/webfonts/flaticon/flaticon.css">
+    <link rel="stylesheet" href="assets/css/owl.css">
+    <link rel="stylesheet" href="assets/css/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="assets/css/layerslider.css">
+    <link rel="stylesheet" href="assets/css/template.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/colors/color.css">
+    <link rel="stylesheet" href="assets/css/loader.css">
+</head>
+
+<body>
+
+    <div class="preloader">
+        <div class="loader xy-center"></div>
+    </div>
+
+    <div id="page_wrapper">
+        <!--============== Property Search Form Start ==============-->
+        <div class="full-row bg-gray p-0">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <form class="quick-search px-0 form-icon-right position-relative" action="#" method="post">
+                            <div class="row row-cols-lg-6 row-cols-md-3 row-cols-1 g-3">
+                                <div class="col">
+                                    <input type="text" class="form-control" name="keyword" placeholder="Enter Keyword...">
+                                </div>
+                                <div class="col">
+                                    <select class="form-control">
+                                    <option>Property Types</option>
+                                    <option>House</option>
+                                    <option>Office</option>
+                                    <option>Appartment</option>
+                                    <option>Condos</option>
+                                    <option>Villa</option>
+                                    <option>Small Family</option>
+                                    <option>Single Room</option>
+                                </select>
+                                </div>
+                                <div class="col">
+                                    <div class="position-relative">
+                                        <input type="text" class="form-control" name="location" placeholder="Location">
+                                        <i class="flaticon-placeholder flat-mini icon-font y-center text-dark"></i>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="position-relative">
+                                        <button class="form-control price-toggle toggle-btn" data-target="#data-range-price">Price <i class="fas fa-angle-down font-mini icon-font y-center text-dark"></i></button>
+                                        <div id="data-range-price" class="price_range price-range-toggle">
+                                            <div class="area-filter price-filter">
+                                                <span class="price-slider">
+                                            <input class="filter_price" type="text" name="price" value="0;10000000">
+                                        </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="position-relative">
+                                        <button class="form-control text-start toggle-btn" data-target="#aditional-check">Advanced <i class="fas fa-ellipsis-v font-mini icon-font y-center text-dark"></i></button>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <button class="btn btn-primary w-100">Search</button>
+                                </div>
+                                <!-- Advance Features -->
+                                <div id="aditional-check" class="aditional-features p-5">
+                                    <h5 class="mb-3">Aditional Options</h5>
+                                    <ul class="row row-cols-lg-4 row-cols-md-2 row-cols-1 custom-check-box mb-4">
+                                        <li class="col">
+                                            <input type="checkbox" class="custom-control-input hide" id="customCheck1">
+                                            <label class="custom-control-label" for="customCheck1">Air Conditioning</label>
+                                        </li>
+                                        <li class="col">
+                                            <input type="checkbox" class="custom-control-input hide" id="customCheck2">
+                                            <label class="custom-control-label" for="customCheck2">Garage Facility</label>
+                                        </li>
+                                        <li class="col">
+                                            <input type="checkbox" class="custom-control-input hide" id="customCheck3">
+                                            <label class="custom-control-label" for="customCheck3">Swiming Pool</label>
+                                        </li>
+                                        <li class="col">
+                                            <input type="checkbox" class="custom-control-input hide" id="customCheck4">
+                                            <label class="custom-control-label" for="customCheck4">Fire Security</label>
+                                        </li>
+
+                                        <li class="col">
+                                            <input type="checkbox" class="custom-control-input hide" id="customCheck5">
+                                            <label class="custom-control-label" for="customCheck5">Fire Place Facility</label>
+                                        </li>
+                                        <li class="col">
+                                            <input type="checkbox" class="custom-control-input hide" id="customCheck6">
+                                            <label class="custom-control-label" for="customCheck6">Play Ground</label>
+                                        </li>
+                                        <li class="col">
+                                            <input type="checkbox" class="custom-control-input hide" id="customCheck7">
+                                            <label class="custom-control-label" for="customCheck7">Ferniture Include</label>
+                                        </li>
+                                        <li class="col">
+                                            <input type="checkbox" class="custom-control-input hide" id="customCheck8">
+                                            <label class="custom-control-label" for="customCheck8">Marbel Floor</label>
+                                        </li>
+
+                                        <li class="col">
+                                            <input type="checkbox" class="custom-control-input hide" id="customCheck9">
+                                            <label class="custom-control-label" for="customCheck9">Store Room</label>
+                                        </li>
+                                        <li class="col">
+                                            <input type="checkbox" class="custom-control-input hide" id="customCheck10">
+                                            <label class="custom-control-label" for="customCheck10">Hight Class Door</label>
+                                        </li>
+                                        <li class="col">
+                                            <input type="checkbox" class="custom-control-input hide" id="customCheck11">
+                                            <label class="custom-control-label" for="customCheck11">Floor Heating System</label>
+                                        </li>
+                                        <li class="col">
+                                            <input type="checkbox" class="custom-control-input hide" id="customCheck12">
+                                            <label class="custom-control-label" for="customCheck12">Garden Include</label>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--============== Property Search Form End ==============-->
+        <!--============== Header Section Start ==============-->
+        <header class="shadow-sm bg-white">
+            <div class="main-nav py-2 xs-p-0">
+                <div class="container">
+                    <div class="row">
+                        <div class="col">
+                            <nav class="navbar navbar-expand-lg nav-secondary nav-primary-hover nav-line-active">
+                                <a class="navbar-brand" href="#"><img class="nav-logo" src="assets/images/logo/logo1.png" alt="Image not found !"></a>
+                                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                    <span class="navbar-toggler-icon flaticon-menu flat-small text-primary"></span>
+                                  </button>
+                                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                    <ul class="navbar-nav mx-auto">
+                                        <li class="nav-item dropdown">
+                                            <a class="nav-link dropdown-toggle" href="#">Home</a>
+                                            <ul class="dropdown-menu">
+                                                <li><a class="dropdown-item" href="index.html">Home 01</a></li>
+                                                <li><a class="dropdown-item" href="index-2.html">Home 02</a></li>
+                                                <li><a class="dropdown-item" href="index-3.html">Home 03</a></li>
+                                                <li><a class="dropdown-item" href="index-4.html">Home 04</a></li>
+                                                <li><a class="dropdown-item" href="index-5.html">Home 05</a></li>
+                                                <li><a class="dropdown-item" href="index-6.html">Home 06</a></li>
+                                                <li><a class="dropdown-item" href="index-7.html">Home 07</a></li>
+                                                <li><a class="dropdown-item" href="index-8.html">Home 08</a></li>
+                                                <li><a class="dropdown-item" href="index-9.html">Home 09</a></li>
+                                                <li><a class="dropdown-item" href="index-10.html">Home 10</a></li>
+                                                <li><a class="dropdown-item" href="index-11.html">Home 11</a></li>
+                                                <li><a class="dropdown-item" href="index-12.html">Home 12</a></li>
+                                                <li><a class="dropdown-item" href="index-13.html">Home 13 <span class="text-primary ps-3 font-mini">New</span></a></li>
+                                                <li><a class="dropdown-item" href="index-14.html">Home 14 <span class="text-primary ps-3 font-mini">New</span></a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="nav-item dropdown">
+                                            <a class="nav-link dropdown-toggle" href="#">Listing</a>
+                                            <ul class="dropdown-menu">
+                                                <li class="dropdown"> <a class="dropdown-toggle dropdown-item" href="property-grid-v1.html">Property Grid</a>
+                                                    <ul class="dropdown-menu">
+                                                        <li><a class="dropdown-item" href="property-grid-v1.html">Grid View V1</a></li>
+                                                        <li><a class="dropdown-item" href="property-grid-v2.html">Grid View V2</a></li>
+                                                        <li><a class="dropdown-item" href="property-grid-v3.html">Grid View V3</a></li>
+                                                        <li><a class="dropdown-item" href="property-grid-v4.html">Grid View V4</a></li>
+                                                        <li><a class="dropdown-item" href="property-grid-v5.html">Grid View V5</a></li>
+                                                        <li><a class="dropdown-item" href="property-grid-full.html">Grid Full Width</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li class="dropdown"> <a class="dropdown-toggle dropdown-item" href="property-list-v1.html">Property List</a>
+                                                    <ul class="dropdown-menu">
+                                                        <li><a class="dropdown-item" href="property-list-v1.html">List View V1</a></li>
+                                                        <li><a class="dropdown-item" href="property-list-v2.html">List View V2</a></li>
+                                                        <li><a class="dropdown-item" href="property-list-full.html">List Full Width</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li class="dropdown"> <a class="dropdown-toggle dropdown-item" href="#">Listing Variation</a>
+                                                    <ul class="dropdown-menu">
+                                                        <li><a class="dropdown-item" href="property-banner-search.html">Banner Search</a></li>
+                                                        <li><a class="dropdown-item" href="property-including-slider.html">Slider Include</a></li>
+                                                        <li><a class="dropdown-item" href="property-including-map.html">Map Include</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li class="dropdown"> <a class="dropdown-toggle dropdown-item" href="property-map-grid-v1.html">Property With Map</a>
+                                                    <ul class="dropdown-menu">
+                                                        <li><a class="dropdown-item" href="property-map-grid-v1.html">Map Grid View V1</a></li>
+                                                        <li><a class="dropdown-item" href="property-map-grid-v2.html">Map Grid View V2</a></li>
+                                                        <li><a class="dropdown-item" href="property-map-grid-v3.html">Map Grid View V3</a></li>
+                                                        <li><a class="dropdown-item" href="property-map-grid-v4.html">Map Grid View V4</a></li>
+                                                        <li><a class="dropdown-item" href="property-map-list-v1.html">Map List View V1</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li class="dropdown"> <a class="dropdown-toggle dropdown-item" href="advance-search-v1.html">Advance Search</a>
+                                                    <ul class="dropdown-menu">
+                                                        <li><a class="dropdown-item" href="advance-search-v1.html">Advance Search V1</a></li>
+                                                        <li><a class="dropdown-item" href="advance-search-v2.html">Advance Search V2</a></li>
+                                                        <li><a class="dropdown-item" href="advance-search-v3.html">Advance Search V3</a></li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="nav-item dropdown">
+                                            <a class="nav-link dropdown-toggle" href="#">Features</a>
+                                            <ul class="dropdown-menu">
+                                                <li class="dropdown"> <a class="dropdown-toggle dropdown-item" href="property-single-v1.html">Single Property</a>
+                                                    <ul class="dropdown-menu">
+                                                        <li><a class="dropdown-item" href="property-single-v1.html">Single Property V1</a></li>
+                                                        <li><a class="dropdown-item" href="property-single-v2.html">Single Property V2</a></li>
+                                                        <li><a class="dropdown-item" href="property-single-v3.html">Single Property V3</a></li>
+                                                        <li><a class="dropdown-item" href="property-single-v4.html">Single Property V4</a></li>
+                                                        <li><a class="dropdown-item" href="property-single-v5.html">Single Property V5</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li class="dropdown"> <a class="dropdown-toggle dropdown-item" href="left-filter-property-v1.html">Left Filter Search</a>
+                                                    <ul class="dropdown-menu">
+                                                        <li><a class="dropdown-item" href="left-filter-property-v1.html">Filter Property V1</a></li>
+                                                        <li><a class="dropdown-item" href="left-filter-property-v2.html">Filter Property V2</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li class="dropdown"> <a class="dropdown-toggle dropdown-item" href="dashboard.html">Dashboard</a>
+                                                    <ul class="dropdown-menu">
+                                                        <li><a class="dropdown-item" href="dashboard.html">My Account</a></li>
+                                                        <li><a class="dropdown-item" href="dashboard-profile.html">My Profile</a></li>
+                                                        <li><a class="dropdown-item" href="dashboard-profile.html">Social Media</a></li>
+                                                        <li><a class="dropdown-item" href="dashboard-listing.html">My Properties</a></li>
+                                                        <li><a class="dropdown-item" href="dashboard-favorite.html">Favorited Properties</a></li>
+                                                        <li><a class="dropdown-item" href="dashboard-submit-property.html">Submit New Property</a></li>
+                                                        <li><a class="dropdown-item" href="dashboard-message.html">Message</a></li>
+                                                        <li><a class="dropdown-item" href="dashboard-agency-profile.html">Agency Profile</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li class="dropdown">
+                                                    <a class="dropdown-toggle dropdown-item" href="agent-grid-view.html">Agents</a>
+                                                    <ul class="dropdown-menu">
+                                                        <li><a class="dropdown-item" href="agent-grid-view.html">Agents Grid View</a></li>
+                                                        <li><a class="dropdown-item" href="agent-list-view.html">Agents List View</a></li>
+                                                        <li><a class="dropdown-item" href="agent-details.html">Agents Details</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li class="dropdown">
+                                                    <a class="dropdown-toggle dropdown-item" href="photo-gallery-v1.html">Photo Gallery</a>
+                                                    <ul class="dropdown-menu">
+                                                        <li><a class="dropdown-item" href="photo-gallery-v1.html">Photo Gallery V1</a></li>
+                                                        <li><a class="dropdown-item" href="photo-gallery-v2.html">Photo Gallery V2</a></li>
+                                                        <li><a class="dropdown-item" href="photo-gallery-v3.html">Photo Gallery V3</a></li>
+                                                        <li><a class="dropdown-item" href="photo-gallery-v4.html">Photo Gallery V4</a></li>
+                                                        <li><a class="dropdown-item" href="photo-gallery-v5.html">Photo Gallery V5</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li><a class="dropdown-item" href="compare.html">Compare</a></li>
+                                                <li><a class="dropdown-item" href="dashboard-submit-property.html">Submit Property</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="nav-item dropdown mega-dropdown">
+                                            <a class="nav-link dropdown-toggle" href="#">Pages</a>
+                                            <ul class="dropdown-menu mega-dropdown-menu">
+                                                <li class="mega-container">
+                                                    <div class="row row-cols-lg-4 row-cols-1">
+                                                        <div class="col">
+                                                            <ul>
+                                                                <li><a class="dropdown-item" href="about.html">About Us</a></li>
+                                                                <li><a class="dropdown-item" href="our-mission.html">Our Mission</a></li>
+                                                                <li><a class="dropdown-item" href="career.html">Careers</a></li>
+                                                                <li><a class="dropdown-item" href="award.html">Awards</a></li>
+                                                                <li><a class="dropdown-item" href="testimonials.html">Testimonials</a></li>
+                                                                <li><a class="dropdown-item" href="timeline.html">Timeline</a></li>
+                                                            </ul>
+                                                        </div>
+                                                        <div class="col">
+                                                            <ul>
+                                                                <li><a class="dropdown-item" href="dashboard-profile.html">My Profile</a></li>
+                                                                <li><a class="dropdown-item" href="dashboard-profile.html">Social Media</a></li>
+                                                                <li><a class="dropdown-item" href="dashboard-listing.html">My Properties</a></li>
+                                                                <li><a class="dropdown-item" href="dashboard-favorite.html">Favorited Properties</a></li>
+                                                                <li><a class="dropdown-item" href="dashboard-submit-property.html">Submit New Property</a></li>
+                                                                <li><a class="dropdown-item" href="#">Shortcodes</a></li>
+                                                            </ul>
+                                                        </div>
+                                                        <div class="col">
+                                                            <ul>
+                                                                <li><a class="dropdown-item" href="#">Feedback and Comments</a></li>
+                                                                <li><a class="dropdown-item" href="#">Payments and Invoice</a></li>
+                                                                <li><a class="dropdown-item" href="dashboard-change-password.html">Change Password</a></li>
+                                                                <li><a class="dropdown-item" href="terms-and-condition.html">Terms And Condition</a></li>
+                                                                <li><a class="dropdown-item" href="pricing-table.html">Pricing Table</a></li>
+                                                                <li><a class="dropdown-item" href="dashboard-agency-profile.html">Agency Profile</a></li>
+                                                            </ul>
+                                                        </div>
+                                                        <div class="col">
+                                                            <ul>
+                                                                <li><a class="dropdown-item" href="our-services.html">Our Services</a></li>
+                                                                <li><a class="dropdown-item" href="dashboard-submit-property.html">Submit Property</a></li>
+                                                                <li><a class="dropdown-item" href="#">Invoice Details</a></li>
+                                                                <li><a class="dropdown-item" href="dashboard-message.html">Message</a></li>
+                                                                <li><a class="dropdown-item" href="404.html">Error Page</a></li>
+                                                                <li><a class="dropdown-item" href="faq.html">FAQ</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="nav-item dropdown">
+                                            <a class="nav-link dropdown-toggle" href="#">Blog</a>
+                                            <ul class="dropdown-menu">
+                                                <li class="dropdown"> <a class="dropdown-toggle dropdown-item" href="#">Blog Grid</a>
+                                                    <ul class="dropdown-menu">
+                                                        <li><a class="dropdown-item" href="blog-grid-v1.html">Blog Grid V1</a></li>
+                                                        <li><a class="dropdown-item" href="blog-grid-v2.html">Blog Grid V2</a></li>
+                                                        <li><a class="dropdown-item" href="blog-grid-v3.html">Blog Grid V3</a></li>
+                                                        <li><a class="dropdown-item" href="blog-grid-v4.html">Blog Grid V4</a></li>
+                                                        <li><a class="dropdown-item" href="blog-grid-v5.html">Blog Grid V5</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li class="dropdown"> <a class="dropdown-toggle dropdown-item" href="#">Blog List</a>
+                                                    <ul class="dropdown-menu">
+                                                        <li><a class="dropdown-item" href="blog-list-v1.html">Blog List V1</a></li>
+                                                        <li><a class="dropdown-item" href="blog-list-v2.html">Blog List V2</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li><a class="dropdown-item" href="blog-masonry-grid.html">Masonry Grid</a></li>
+                                                <li class="dropdown"> <a class="dropdown-toggle dropdown-item" href="#">Single Blog</a>
+                                                    <ul class="dropdown-menu">
+                                                        <li><a class="dropdown-item" href="blog-single-v1.html">Blog Single V1</a></li>
+                                                        <li><a class="dropdown-item" href="blog-single-v2.html">Blog Single V2</a></li>
+                                                        <li><a class="dropdown-item" href="blog-single-v3.html">Blog Single V3</a></li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="contact.html">Contact</a>
+                                        </li>
+                                    </ul>
+                                    <a href="#" class="ms-2 md-mx-none text-primary fw-bold higlight-font">( Helpline: +1-435-782-4312 )</a>
+                                </div>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!--============== Header Section End ==============-->
+
+        <!--============== Map Banner Part Start ==============-->
+        <div id="map-banner">
+            <div class="homepage-map">
+                <div id="map"></div>
+            </div>
+        </div>
+        <!--============== Map Banner Part End ==============-->
+
+        <!--============== Service Part Start ==============-->
+        <div class="full-row">
+            <div class="container">
+                <div class="row row-cols-lg-4 row-cols-sm-2 row-cols-1 g-4">
+                    <div class="col">
+                        <div class="thumb-angle-left mb-4 wow fadeInUp" data-wow-delay="100ms" data-wow-duration="1000ms">
+                            <div class="box-70px bg-primary p-3"><i class="flaticon-sketch-1 flat-small text-white"></i></div>
+                            <h5 class="mt-5 mb-3"><a href="#" class="transation">Booking</a></h5>
+                            <p>If you want to purchase from our listing, easily you can make your booking. Our Agent will contact with you and discuss.</p>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="thumb-angle-left mb-4 wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1000ms">
+                            <div class="box-70px bg-primary p-3"><i class="flaticon-contract flat-small text-white"></i></div>
+                            <h5 class="mt-5 mb-3"><a href="#" class="transation">Guarantee</a></h5>
+                            <p>We ensure that your payment 100% guaranteed and after booking your property, your payment is returnable with in 30 days.</p>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="thumb-angle-left mb-4 wow fadeInUp" data-wow-delay="300ms" data-wow-duration="1000ms">
+                            <div class="box-70px bg-primary p-3"><i class="flaticon-real-estate flat-small text-white"></i></div>
+                            <h5 class="mt-5 mb-3"><a href="#" class="transation">Management</a></h5>
+                            <p>Do you have hour but you don't have time to lookafter, We are here to take the responsibility of your property.</p>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="thumb-angle-left mb-4 wow fadeInUp" data-wow-delay="400ms" data-wow-duration="1000ms">
+                            <div class="box-70px bg-primary p-3"><i class="flaticon-online-marketing flat-small text-white"></i></div>
+                            <h5 class="mt-5 mb-3"><a href="#" class="transation">Advertisement</a></h5>
+                            <p>We make advertise of your property in our listing for sell or rent. We have top ranking property listing website.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--============== Service Part End ==============-->
+
+        <!--============== Property Tab Start ==============-->
+        <div class="full-row pt-0">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 mb-5">
+                        <h2 class="main-title down-line w-50 mx-auto mb-4 text-center w-sm-100">Featured Properties</h2>
+                        <span class="d-table w-50 w-sm-100 sub-title mx-auto text-center">Mauris primis turpis Laoreet magna felis mi amet quam enim curae. Sodales semper tempor dictum faucibus habitasse.</span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <div class="mix-tab">
+                            <ul class="list-color-secondary tab-simple m-auto d-table">
+                                <li data-filter="all">All</li>
+                                <li data-filter=".house">House</li>
+                                <li data-filter=".office">Office</li>
+                                <li data-filter=".appartment">Appartment</li>
+                                <li data-filter=".land">Land</li>
+                            </ul>
+                        </div>
+                        <div class="mix-element row row-cols-lg-3 row-cols-md-3 row-cols-1 mt-4 g-4">
+                            <div class="col mix house land">
+                                <!-- Property Grid -->
+                                <div class="property-grid-2 property-block transation">
+                                    <div class="overflow-hidden position-relative transation thumbnail-img bg-secondary hover-img-zoom">
+                                        <div class="cata position-absolute">
+                                            <span class="sale bg-secondary text-white">For Sale</span>
+                                        </div>
+                                        <a href="property-single-v1.html" class="d-block"><img src="assets/images/property_grid/property-grid-1.png" alt="Image Not Found!"></a>
+                                        <ul class="position-absolute quick-meta">
+                                            <li><a href="#" title="Add Compare"><i class="flaticon-transfer flat-mini"></i></a></li>
+                                            <li><a href="#" title="Add Favourite"><i class="flaticon-like-1 flat-mini"></i></a></li>
+                                            <li class="md-mx-none"><a class="quick-view" href="#quick-view" title="Quick View"><i class="flaticon-zoom-increasing-symbol flat-mini"></i></a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="post-content py-3">
+                                        <div class="post-meta font-small text-uppercase list-color-primary">
+                                            <a href="#" class="listing-ctg"><i class="fa-solid fa-building"></i><span>Apartment</span></a>
+                                        </div>
+                                        <h5 class="listing-title"><a href="property-single-v1.html">Family House Residense</a></h5>
+                                        <span class="listing-location"><i class="fas fa-map-marker-alt"></i> 2305 Tree Frog Lane Overlandpk</span>
+                                        <ul class="d-flex quantity font-fifteen">
+                                            <li title="Beds"><span><i class="fa-solid fa-bed"></i></span>7</li>
+                                            <li title="Baths"><span><i class="fa-solid fa-shower"></i></span>5</li>
+                                            <li title="Area"><span><i class="fa-solid fa-vector-square"></i></span>1200 Sqft</li>
+                                            <li title="Gas"><span><i class="fa-solid fa-fire"></i></span>Yes</li>
+                                        </ul>
+                                        <span class="listing-price">$120,5500<small> ( One Time )</small></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col mix office">
+                                <!-- Property Grid -->
+                                <div class="property-grid-2 property-block transation">
+                                    <div class="overflow-hidden position-relative transation thumbnail-img bg-secondary hover-img-zoom">
+                                        <div class="cata position-absolute">
+                                            <span class="sale bg-secondary text-white">For Rent</span>
+                                            <span class="featured bg-primary text-white">Featured</span>
+                                        </div>
+                                        <a href="property-single-v1.html" class="d-block"><img src="assets/images/property_grid/property-grid-2.png" alt="Image Not Found!"></a>
+                                        <ul class="position-absolute quick-meta">
+                                            <li><a href="#" title="Add Compare"><i class="flaticon-transfer flat-mini"></i></a></li>
+                                            <li><a href="#" title="Add Favourite"><i class="flaticon-like-1 flat-mini"></i></a></li>
+                                            <li class="md-mx-none"><a class="quick-view" href="#quick-view" title="Quick View"><i class="flaticon-zoom-increasing-symbol flat-mini"></i></a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="post-content py-3">
+                                        <div class="post-meta font-small text-uppercase list-color-primary">
+                                            <a href="#" class="listing-ctg"><i class="fa-solid fa-building"></i><span>Villa</span></a>
+                                        </div>
+                                        <h5 class="listing-title"><a href="property-single-v1.html">Gorgeous Villa Bay View</a></h5>
+                                        <span class="listing-location"><i class="fas fa-map-marker-alt"></i> 2305 Tree Frog Lane Overlandpk</span>
+                                        <ul class="d-flex quantity font-fifteen">
+                                            <li title="Beds"><span><i class="fa-solid fa-bed"></i></span>7</li>
+                                            <li title="Baths"><span><i class="fa-solid fa-shower"></i></span>5</li>
+                                            <li title="Area"><span><i class="fa-solid fa-vector-square"></i></span>1200 Sqft</li>
+                                            <li title="Gas"><span><i class="fa-solid fa-fire"></i></span>Yes</li>
+                                        </ul>
+                                        <span class="listing-price">$3450<small> ( Monthly )</small></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col mix appartment land">
+                                <!-- Property Grid -->
+                                <div class="property-grid-2 property-block transation">
+                                    <div class="overflow-hidden position-relative transation thumbnail-img bg-secondary hover-img-zoom">
+                                        <div class="cata position-absolute">
+                                            <span class="sale bg-secondary text-white">For Rent</span>
+                                            <span class="featured bg-primary text-white">Featured</span>
+                                        </div>
+                                        <a href="property-single-v1.html" class="d-block"><img src="assets/images/property_grid/property-grid-3.png" alt="Image Not Found!"></a>
+                                        <ul class="position-absolute quick-meta">
+                                            <li><a href="#" title="Add Compare"><i class="flaticon-transfer flat-mini"></i></a></li>
+                                            <li><a href="#" title="Add Favourite"><i class="flaticon-like-1 flat-mini"></i></a></li>
+                                            <li class="md-mx-none"><a class="quick-view" href="#quick-view" title="Quick View"><i class="flaticon-zoom-increasing-symbol flat-mini"></i></a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="post-content py-3">
+                                        <div class="post-meta font-small text-uppercase list-color-primary">
+                                            <a href="#" class="listing-ctg"><i class="fa-solid fa-building"></i><span>Condos</span></a>
+                                        </div>
+                                        <h5 class="listing-title"><a href="property-single-v1.html">New Developed Condos</a></h5>
+                                        <span class="listing-location"><i class="fas fa-map-marker-alt"></i> 2305 Tree Frog Lane Overlandpk</span>
+                                        <ul class="d-flex quantity font-fifteen">
+                                            <li title="Beds"><span><i class="fa-solid fa-bed"></i></span>7</li>
+                                            <li title="Baths"><span><i class="fa-solid fa-shower"></i></span>5</li>
+                                            <li title="Area"><span><i class="fa-solid fa-vector-square"></i></span>1200 Sqft</li>
+                                            <li title="Gas"><span><i class="fa-solid fa-fire"></i></span>Yes</li>
+                                        </ul>
+                                        <span class="listing-price">$1,0450<small> ( Monthly )</small></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col mix house">
+                                <!-- Property Grid -->
+                                <div class="property-grid-2 property-block transation">
+                                    <div class="overflow-hidden position-relative transation thumbnail-img bg-secondary hover-img-zoom">
+                                        <div class="cata position-absolute">
+                                            <span class="sale bg-secondary text-white">For Rent</span>
+                                            <span class="featured bg-primary text-white">Featured</span>
+                                        </div>
+                                        <a href="property-single-v1.html" class="d-block"><img src="assets/images/property_grid/property-grid-4.png" alt="Image Not Found!"></a>
+                                        <ul class="position-absolute quick-meta">
+                                            <li><a href="#" title="Add Compare"><i class="flaticon-transfer flat-mini"></i></a></li>
+                                            <li><a href="#" title="Add Favourite"><i class="flaticon-like-1 flat-mini"></i></a></li>
+                                            <li class="md-mx-none"><a class="quick-view" href="#quick-view" title="Quick View"><i class="flaticon-zoom-increasing-symbol flat-mini"></i></a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="post-content py-3">
+                                        <div class="post-meta font-small text-uppercase list-color-primary">
+                                            <a href="#" class="listing-ctg"><i class="fa-solid fa-building"></i><span>Apartment</span></a>
+                                        </div>
+                                        <h5 class="listing-title"><a href="property-single-v1.html">Apolo Family House</a></h5>
+                                        <span class="listing-location"><i class="fas fa-map-marker-alt"></i> 2305 Tree Frog Lane Overlandpk</span>
+                                        <ul class="d-flex quantity font-fifteen">
+                                            <li title="Beds"><span><i class="fa-solid fa-bed"></i></span>7</li>
+                                            <li title="Baths"><span><i class="fa-solid fa-shower"></i></span>5</li>
+                                            <li title="Area"><span><i class="fa-solid fa-vector-square"></i></span>1200 Sqft</li>
+                                            <li title="Gas"><span><i class="fa-solid fa-fire"></i></span>Yes</li>
+                                        </ul>
+                                        <span class="listing-price">$1850<small> ( Monthly )</small></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col mix house land">
+                                <!-- Property Grid -->
+                                <div class="property-grid-2 property-block transation">
+                                    <div class="overflow-hidden position-relative transation thumbnail-img bg-secondary hover-img-zoom">
+                                        <div class="cata position-absolute">
+                                            <span class="sale bg-secondary text-white">For Rent</span>
+                                            <span class="featured bg-primary text-white">Featured</span>
+                                        </div>
+                                        <a href="property-single-v1.html" class="d-block"><img src="assets/images/property_grid/property-grid-5.png" alt="Image Not Found!"></a>
+                                        <ul class="position-absolute quick-meta">
+                                            <li><a href="#" title="Add Compare"><i class="flaticon-transfer flat-mini"></i></a></li>
+                                            <li><a href="#" title="Add Favourite"><i class="flaticon-like-1 flat-mini"></i></a></li>
+                                            <li class="md-mx-none"><a class="quick-view" href="#quick-view" title="Quick View"><i class="flaticon-zoom-increasing-symbol flat-mini"></i></a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="post-content py-3">
+                                        <div class="post-meta font-small text-uppercase list-color-primary">
+                                            <a href="#" class="listing-ctg"><i class="fa-solid fa-building"></i><span>Condo</span></a>
+                                        </div>
+                                        <h5 class="listing-title"><a href="property-single-v1.html">Condos Infront of River</a></h5>
+                                        <span class="listing-location"><i class="fas fa-map-marker-alt"></i> 2305 Tree Frog Lane Overlandpk</span>
+                                        <ul class="d-flex quantity font-fifteen">
+                                            <li title="Beds"><span><i class="fa-solid fa-bed"></i></span>7</li>
+                                            <li title="Baths"><span><i class="fa-solid fa-shower"></i></span>5</li>
+                                            <li title="Area"><span><i class="fa-solid fa-vector-square"></i></span>1200 Sqft</li>
+                                            <li title="Gas"><span><i class="fa-solid fa-fire"></i></span>Yes</li>
+                                        </ul>
+                                        <span class="listing-price">$10,0850<small> ( Monthly )</small></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col mix appartment">
+                                <!-- Property Grid -->
+                                <div class="property-grid-2 property-block transation">
+                                    <div class="overflow-hidden position-relative transation thumbnail-img bg-secondary hover-img-zoom">
+                                        <div class="cata position-absolute">
+                                            <span class="sale bg-secondary text-white">For Rent</span>
+                                            <span class="featured bg-primary text-white">Featured</span>
+                                        </div>
+                                        <a href="property-single-v1.html" class="d-block"><img src="assets/images/property_grid/property-grid-6.png" alt="Image Not Found!"></a>
+                                        <ul class="position-absolute quick-meta">
+                                            <li><a href="#" title="Add Compare"><i class="flaticon-transfer flat-mini"></i></a></li>
+                                            <li><a href="#" title="Add Favourite"><i class="flaticon-like-1 flat-mini"></i></a></li>
+                                            <li class="md-mx-none"><a class="quick-view" href="#quick-view" title="Quick View"><i class="flaticon-zoom-increasing-symbol flat-mini"></i></a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="post-content py-3">
+                                        <div class="post-meta font-small text-uppercase list-color-primary">
+                                            <a href="#" class="listing-ctg"><i class="fa-solid fa-building"></i><span>Condos</span></a>
+                                        </div>
+                                        <h5 class="listing-title"><a href="property-single-v1.html">New Developed Condos</a></h5>
+                                        <span class="listing-location"><i class="fas fa-map-marker-alt"></i> 2305 Tree Frog Lane Overlandpk</span>
+                                        <ul class="d-flex quantity font-fifteen">
+                                            <li title="Beds"><span><i class="fa-solid fa-bed"></i></span>7</li>
+                                            <li title="Baths"><span><i class="fa-solid fa-shower"></i></span>5</li>
+                                            <li title="Area"><span><i class="fa-solid fa-vector-square"></i></span>1200 Sqft</li>
+                                            <li title="Gas"><span><i class="fa-solid fa-fire"></i></span>Yes</li>
+                                        </ul>
+                                        <span class="listing-price">$22,0450<small> ( Monthly  )</small></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--============== Property Tab End ==============-->
+
+        <!--============== Property Category Start ==============-->
+        <div class="full-row bg-secondary">
+            <div class="container">
+                <div class="row">
+                    <div class="col mb-5">
+                        <h2 class="down-line text-white w-50 mx-auto mb-4 text-center w-sm-100">What You Area Looking For?</h2>
+                        <span class="d-table w-50 w-sm-100 sub-title text-white fw-normal mx-auto text-center">Mauris primis turpis Laoreet magna felis mi amet quam enim curae. Sodales semper tempor dictum faucibus habitasse.</span>
+                    </div>
+                </div>
+                <div class="row row-cols-lg-5 row-cols-sm-4 row-cols-1 g-3 justify-content-center">
+                    <div class="col">
+                        <a href="#" class="text-center d-flex flex-column align-items-center hover-text-white p-4 bg-white transation text-general hover-bg-primary h-100">
+                            <div class="box-70px position-relative">
+                                <i class="flaticon-home flat-medium d-inline-block text-primary position-absolute xy-center"></i>
+                            </div>
+                            <h6 class="d-block text-secondary">Living House
+                            <p>Preview listing of accommodation property living houses</p>
+                        </h6></a>
+                    </div>
+                    <div class="col">
+                        <a href="#" class="text-center d-flex flex-column align-items-center hover-text-white p-4 bg-white transation text-general hover-bg-primary h-100">
+                            <div class="box-70px position-relative">
+                                <i class="flaticon-sketch-1 flat-medium d-inline-block text-primary position-absolute xy-center"></i>
+                            </div>
+                            <h6 class="d-block text-secondary">Solid Land</h6>
+                            <p>Hight listed solid use-able land in most popular area for development</p>
+                        </a>
+                    </div>
+                    <div class="col">
+                        <a href="#" class="text-center d-flex flex-column align-items-center hover-text-white p-4 bg-white transation text-general hover-bg-primary h-100">
+                            <div class="box-70px position-relative">
+                                <i class="flaticon-online-booking flat-medium d-inline-block text-primary position-absolute xy-center"></i>
+                            </div>
+                            <h6 class="d-block text-secondary">Office Floor</h6>
+                            <p>Preview most popular are office building listed category</p>
+                        </a>
+                    </div>
+                    <div class="col">
+                        <a href="#" class="text-center d-flex flex-column align-items-center hover-text-white p-4 bg-white transation text-general hover-bg-primary h-100">
+                            <div class="box-70px position-relative">
+                                <i class="flaticon-shop flat-medium d-inline-block text-primary position-absolute xy-center"></i>
+                            </div>
+                            <h6 class="d-block text-secondary">Commercial</h6>
+                            <p>Listing Commercial property for business and factory development</p>
+                        </a>
+                    </div>
+                    <div class="col">
+                        <a href="#" class="text-center d-flex flex-column align-items-center hover-text-white p-4 bg-white transation text-general hover-bg-primary h-100">
+                            <div class="box-70px position-relative">
+                                <i class="flaticon-real-estate flat-medium d-inline-block text-primary position-absolute xy-center"></i>
+                            </div>
+                            <h6 class="d-block text-secondary">Hostel Room</h6>
+                            <p>If you are single looking for sinlge living, preview the hostel listing</p>
+                        </a>
+                    </div>
+                    <div class="col">
+                        <a href="#" class="text-center d-flex flex-column align-items-center hover-text-white p-4 bg-white transation text-general hover-bg-primary h-100">
+                            <div class="box-70px position-relative">
+                                <i class="flaticon-online-booking flat-medium d-inline-block text-primary position-absolute xy-center"></i>
+                            </div>
+                            <h6 class="d-block text-secondary">Appartment</h6>
+                            <p>For family living appartment, find your best appartment in our directort list</p>
+                        </a>
+                    </div>
+                    <div class="col">
+                        <a href="#" class="text-center d-flex flex-column align-items-center hover-text-white p-4 bg-white transation text-general hover-bg-primary h-100">
+                            <div class="box-70px position-relative">
+                                <i class="flaticon-sketch flat-medium d-inline-block text-primary position-absolute xy-center"></i>
+                            </div>
+                            <h6 class="d-block text-secondary">Condo</h6>
+                            <p>In our directory we have listed luxury condo for rent and sale</p>
+                        </a>
+                    </div>
+                    <div class="col">
+                        <a href="#" class="text-center d-flex flex-column align-items-center hover-text-white p-4 bg-white transation text-general hover-bg-primary h-100">
+                            <div class="box-70px position-relative">
+                                <i class="flaticon-spa flat-medium d-inline-block text-primary position-absolute xy-center"></i>
+                            </div>
+                            <h6 class="d-block text-secondary">Villa House</h6>
+                            <p>Please who like villa house click here this category listed</p>
+                        </a>
+                    </div>
+                    <div class="col">
+                        <a href="#" class="text-center d-flex flex-column align-items-center hover-text-white p-4 bg-white transation text-general hover-bg-primary h-100">
+                            <div class="box-70px position-relative">
+                                <i class="flaticon-bed flat-medium d-inline-block text-primary position-absolute xy-center"></i>
+                            </div>
+                            <h6 class="d-block text-secondary">Hotel Room</h6>
+                            <p>The traveller people can find best hotel here for living night</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--============== Property Category End ==============-->
+
+        <!--============== Recent Property Start ==============-->
+        <div class="full-row">
+            <div class="container">
+                <div class="row">
+                    <div class="col mb-4">
+                        <div class="align-items-center d-flex">
+                            <div class="me-auto">
+                                <h2 class="d-table">Recent Properties</h2>
+                            </div>
+                            <a href="property-grid-v1.html" class="ms-auto">View All Properties</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <div class="3block-carusel nav-disable owl-carousel">
+                            <div class="item">
+                                <!-- Property Grid -->
+                                <div class="property-grid-2 property-block transation">
+                                    <div class="overflow-hidden position-relative transation thumbnail-img bg-secondary hover-img-zoom">
+                                        <div class="cata position-absolute">
+                                            <span class="sale bg-secondary text-white">For Rent</span>
+                                            <span class="featured bg-primary text-white">Featured</span>
+                                        </div>
+                                        <a href="property-single-v1.html" class="d-block"><img src="assets/images/property_grid/property-grid-8.png" alt="Image Not Found!"></a>
+                                        <ul class="position-absolute quick-meta">
+                                            <li><a href="#" title="Add Compare"><i class="flaticon-transfer flat-mini"></i></a></li>
+                                            <li><a href="#" title="Add Favourite"><i class="flaticon-like-1 flat-mini"></i></a></li>
+                                            <li class="md-mx-none"><a class="quick-view" href="#quick-view" title="Quick View"><i class="flaticon-zoom-increasing-symbol flat-mini"></i></a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="post-content py-3">
+                                        <div class="post-meta font-small text-uppercase list-color-primary">
+                                            <a href="#" class="listing-ctg"><i class="fa-solid fa-building"></i><span>Villa</span></a>
+                                        </div>
+                                        <h5 class="listing-title"><a href="property-single-v1.html">Gorgeous Villa Bay View</a></h5>
+                                        <span class="listing-location"><i class="fas fa-map-marker-alt"></i> 2305 Tree Frog Lane Overlandpk</span>
+                                        <ul class="d-flex quantity font-fifteen">
+                                            <li title="Beds"><span><i class="fa-solid fa-bed"></i></span>7</li>
+                                            <li title="Baths"><span><i class="fa-solid fa-shower"></i></span>5</li>
+                                            <li title="Area"><span><i class="fa-solid fa-vector-square"></i></span>1200 Sqft</li>
+                                            <li title="Gas"><span><i class="fa-solid fa-fire"></i></span>Yes</li>
+                                        </ul>
+                                        <span class="listing-price">$3450<small> ( Monthly )</small></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <!-- Property Grid -->
+                                <div class="property-grid-2 property-block transation">
+                                    <div class="overflow-hidden position-relative transation thumbnail-img bg-secondary hover-img-zoom">
+                                        <div class="cata position-absolute">
+                                            <span class="sale bg-secondary text-white">For Sale</span>
+                                        </div>
+                                        <a href="property-single-v1.html" class="d-block"><img src="assets/images/property_grid/property-grid-7.png" alt="Image Not Found!"></a>
+                                        <ul class="position-absolute quick-meta">
+                                            <li><a href="#" title="Add Compare"><i class="flaticon-transfer flat-mini"></i></a></li>
+                                            <li><a href="#" title="Add Favourite"><i class="flaticon-like-1 flat-mini"></i></a></li>
+                                            <li class="md-mx-none"><a class="quick-view" href="#quick-view" title="Quick View"><i class="flaticon-zoom-increasing-symbol flat-mini"></i></a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="post-content py-3">
+                                        <div class="post-meta font-small text-uppercase list-color-primary">
+                                            <a href="#" class="listing-ctg"><i class="fa-solid fa-building"></i><span>Apartment</span></a>
+                                        </div>
+                                        <h5 class="listing-title"><a href="property-single-v1.html">Family House Residense</a></h5>
+                                        <span class="listing-location"><i class="fas fa-map-marker-alt"></i> 2305 Tree Frog Lane Overlandpk</span>
+                                        <ul class="d-flex quantity font-fifteen">
+                                            <li title="Beds"><span><i class="fa-solid fa-bed"></i></span>7</li>
+                                            <li title="Baths"><span><i class="fa-solid fa-shower"></i></span>5</li>
+                                            <li title="Area"><span><i class="fa-solid fa-vector-square"></i></span>1200 Sqft</li>
+                                            <li title="Gas"><span><i class="fa-solid fa-fire"></i></span>Yes</li>
+                                        </ul>
+                                        <span class="listing-price">$120,5500<small> ( One Time )</small></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <!-- Property Grid -->
+                                <div class="property-grid-2 property-block transation">
+                                    <div class="overflow-hidden position-relative transation thumbnail-img bg-secondary hover-img-zoom">
+                                        <div class="cata position-absolute">
+                                            <span class="sale bg-secondary text-white">For Rent</span>
+                                            <span class="featured bg-primary text-white">Featured</span>
+                                        </div>
+                                        <a href="property-single-v1.html" class="d-block"><img src="assets/images/property_grid/property-grid-6.png" alt="Image Not Found!"></a>
+                                        <ul class="position-absolute quick-meta">
+                                            <li><a href="#" title="Add Compare"><i class="flaticon-transfer flat-mini"></i></a></li>
+                                            <li><a href="#" title="Add Favourite"><i class="flaticon-like-1 flat-mini"></i></a></li>
+                                            <li class="md-mx-none"><a class="quick-view" href="#quick-view" title="Quick View"><i class="flaticon-zoom-increasing-symbol flat-mini"></i></a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="post-content py-3">
+                                        <div class="post-meta font-small text-uppercase list-color-primary">
+                                            <a href="#" class="listing-ctg"><i class="fa-solid fa-building"></i><span>Condos</span></a>
+                                        </div>
+                                        <h5 class="listing-title"><a href="property-single-v1.html">New Developed Condos</a></h5>
+                                        <span class="listing-location"><i class="fas fa-map-marker-alt"></i> 2305 Tree Frog Lane Overlandpk</span>
+                                        <ul class="d-flex quantity font-fifteen">
+                                            <li title="Beds"><span><i class="fa-solid fa-bed"></i></span>7</li>
+                                            <li title="Baths"><span><i class="fa-solid fa-shower"></i></span>5</li>
+                                            <li title="Area"><span><i class="fa-solid fa-vector-square"></i></span>1200 Sqft</li>
+                                            <li title="Gas"><span><i class="fa-solid fa-fire"></i></span>Yes</li>
+                                        </ul>
+                                        <span class="listing-price">$22,0450<small> ( Monthly  )</small></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <!-- Property Grid -->
+                                <div class="property-grid-2 property-block transation">
+                                    <div class="overflow-hidden position-relative transation thumbnail-img bg-secondary hover-img-zoom">
+                                        <div class="cata position-absolute">
+                                            <span class="sale bg-secondary text-white">For Rent</span>
+                                            <span class="featured bg-primary text-white">Featured</span>
+                                        </div>
+                                        <a href="property-single-v1.html" class="d-block"><img src="assets/images/property_grid/property-grid-5.png" alt="Image Not Found!"></a>
+                                        <ul class="position-absolute quick-meta">
+                                            <li><a href="#" title="Add Compare"><i class="flaticon-transfer flat-mini"></i></a></li>
+                                            <li><a href="#" title="Add Favourite"><i class="flaticon-like-1 flat-mini"></i></a></li>
+                                            <li class="md-mx-none"><a class="quick-view" href="#quick-view" title="Quick View"><i class="flaticon-zoom-increasing-symbol flat-mini"></i></a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="post-content py-3">
+                                        <div class="post-meta font-small text-uppercase list-color-primary">
+                                            <a href="#" class="listing-ctg"><i class="fa-solid fa-building"></i><span>Condo</span></a>
+                                        </div>
+                                        <h5 class="listing-title"><a href="property-single-v1.html">Condos Infront of River</a></h5>
+                                        <span class="listing-location"><i class="fas fa-map-marker-alt"></i> 2305 Tree Frog Lane Overlandpk</span>
+                                        <ul class="d-flex quantity font-fifteen">
+                                            <li title="Beds"><span><i class="fa-solid fa-bed"></i></span>7</li>
+                                            <li title="Baths"><span><i class="fa-solid fa-shower"></i></span>5</li>
+                                            <li title="Area"><span><i class="fa-solid fa-vector-square"></i></span>1200 Sqft</li>
+                                            <li title="Gas"><span><i class="fa-solid fa-fire"></i></span>Yes</li>
+                                        </ul>
+                                        <span class="listing-price">$10,0850<small> ( Monthly )</small></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <!-- Property Grid -->
+                                <div class="property-grid-2 property-block transation">
+                                    <div class="overflow-hidden position-relative transation thumbnail-img bg-secondary hover-img-zoom">
+                                        <div class="cata position-absolute">
+                                            <span class="sale bg-secondary text-white">For Rent</span>
+                                            <span class="featured bg-primary text-white">Featured</span>
+                                        </div>
+                                        <a href="property-single-v1.html" class="d-block"><img src="assets/images/property_grid/property-grid-4.png" alt="Image Not Found!"></a>
+                                        <ul class="position-absolute quick-meta">
+                                            <li><a href="#" title="Add Compare"><i class="flaticon-transfer flat-mini"></i></a></li>
+                                            <li><a href="#" title="Add Favourite"><i class="flaticon-like-1 flat-mini"></i></a></li>
+                                            <li class="md-mx-none"><a class="quick-view" href="#quick-view" title="Quick View"><i class="flaticon-zoom-increasing-symbol flat-mini"></i></a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="post-content py-3">
+                                        <div class="post-meta font-small text-uppercase list-color-primary">
+                                            <a href="#" class="listing-ctg"><i class="fa-solid fa-building"></i><span>Apartment</span></a>
+                                        </div>
+                                        <h5 class="listing-title"><a href="property-single-v1.html">Apolo Family House</a></h5>
+                                        <span class="listing-location"><i class="fas fa-map-marker-alt"></i> 2305 Tree Frog Lane Overlandpk</span>
+                                        <ul class="d-flex quantity font-fifteen">
+                                            <li title="Beds"><span><i class="fa-solid fa-bed"></i></span>7</li>
+                                            <li title="Baths"><span><i class="fa-solid fa-shower"></i></span>5</li>
+                                            <li title="Area"><span><i class="fa-solid fa-vector-square"></i></span>1200 Sqft</li>
+                                            <li title="Gas"><span><i class="fa-solid fa-fire"></i></span>Yes</li>
+                                        </ul>
+                                        <span class="listing-price">$1850<small> ( Monthly )</small></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <!-- Property Grid -->
+                                <div class="property-grid-2 property-block transation">
+                                    <div class="overflow-hidden position-relative transation thumbnail-img bg-secondary hover-img-zoom">
+                                        <div class="cata position-absolute">
+                                            <span class="sale bg-secondary text-white">For Rent</span>
+                                            <span class="featured bg-primary text-white">Featured</span>
+                                        </div>
+                                        <a href="property-single-v1.html" class="d-block"><img src="assets/images/property_grid/property-grid-3.png" alt="Image Not Found!"></a>
+                                        <ul class="position-absolute quick-meta">
+                                            <li><a href="#" title="Add Compare"><i class="flaticon-transfer flat-mini"></i></a></li>
+                                            <li><a href="#" title="Add Favourite"><i class="flaticon-like-1 flat-mini"></i></a></li>
+                                            <li class="md-mx-none"><a class="quick-view" href="#quick-view" title="Quick View"><i class="flaticon-zoom-increasing-symbol flat-mini"></i></a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="post-content py-3">
+                                        <div class="post-meta font-small text-uppercase list-color-primary">
+                                            <a href="#" class="listing-ctg"><i class="fa-solid fa-building"></i><span>Condos</span></a>
+                                        </div>
+                                        <h5 class="listing-title"><a href="property-single-v1.html">New Developed Condos</a></h5>
+                                        <span class="listing-location"><i class="fas fa-map-marker-alt"></i> 2305 Tree Frog Lane Overlandpk</span>
+                                        <ul class="d-flex quantity font-fifteen">
+                                            <li title="Beds"><span><i class="fa-solid fa-bed"></i></span>7</li>
+                                            <li title="Baths"><span><i class="fa-solid fa-shower"></i></span>5</li>
+                                            <li title="Area"><span><i class="fa-solid fa-vector-square"></i></span>1200 Sqft</li>
+                                            <li title="Gas"><span><i class="fa-solid fa-fire"></i></span>Yes</li>
+                                        </ul>
+                                        <span class="listing-price">$1,0450<small> ( Monthly )</small></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--============== Recent Property End ==============-->
+
+        <!--============== Data Counting Start ==============-->
+        <div class="full-row p-0 bg-secondary">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="fact-counter pt-5 pb-4 rounded">
+                            <div class="row">
+                                <div class="col-lg-3 col-sm-6">
+                                    <div class="mb-30 text-center count wow fadeIn animate" data-wow-duration="300ms" style="visibility: visible; animation-duration: 300ms; animation-name: fadeIn;">
+                                        <span class="count-num text-primary h2" data-speed="3000" data-stop="310">3210</span>
+                                        <h5 class="text-white font-400 pt-2">Listed Property</h5>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-sm-6">
+                                    <div class="mb-30 text-center count wow fadeIn animate" data-wow-duration="300ms" style="visibility: visible; animation-duration: 300ms; animation-name: fadeIn;">
+                                        <span class="count-num text-primary h2" data-speed="3000" data-stop="51">51</span>
+                                        <h5 class="text-white font-400 pt-2">Mega Project</h5>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-sm-6">
+                                    <div class="mb-30 text-center count wow fadeIn animate" data-wow-duration="300ms" style="visibility: visible; animation-duration: 300ms; animation-name: fadeIn;">
+                                        <span class="count-num text-primary h2" data-speed="3000" data-stop="25">25</span>
+                                        <h5 class="text-white font-400 pt-2">Awards Won</h5>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-sm-6">
+                                    <div class="mb-30 text-center count wow fadeIn animate" data-wow-duration="300ms" style="visibility: visible; animation-duration: 300ms; animation-name: fadeIn;">
+                                        <span class="count-num text-primary h2" data-speed="3000" data-stop="2130">2130</span>
+                                        <h5 class="text-white font-400 pt-2">Happy Clients</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--============== Data Counting End ==============-->
+
+        <!--============== Testimonial Section Start ==============-->
+        <div class="full-row">
+            <div class="container">
+                <div class="row">
+                    <div class="col mb-5">
+                        <span class="text-primary tagline pb-2 d-table m-auto">Testimonial</span>
+                        <h2 class="down-line w-50 mx-auto mb-4 text-center w-sm-100">Whay Client Says About Us</h2>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-lg-7">
+                        <div class="testimonial-simple text-center px-5">
+                            <div class="text-carusel owl-carousel">
+                                <div class="item">
+                                    <i class="flaticon-right-quote flat-large text-primary d-table mx-auto"></i>
+                                    <blockquote class="text-secondary fs-5 fst-italic">“ Posuere mus curabitur parturient scelerisque suspendisse elementum facilisis dignissim non purus torquent turpis interdum hendrerit erat ultrices pretium risus elementum. Fringilla aliquet mattis lacinia quam a montes maecenas parturient urna varius. Sollicitudin pede sapien taciti dui.”</blockquote>
+                                    <h4 class="mt-4 font-400">Mark Wiggins</h4>
+                                    <span class="text-primary font-fifteen">CEO ( Grodins Group )</span>
+                                </div>
+                                <div class="item">
+                                    <i class="flaticon-right-quote flat-large text-primary d-table mx-auto"></i>
+                                    <blockquote class="text-secondary fs-5 fst-italic">“ Posuere mus curabitur parturient scelerisque suspendisse elementum facilisis dignissim non purus torquent turpis interdum hendrerit erat ultrices pretium risus elementum. Fringilla aliquet mattis lacinia quam a montes maecenas parturient urna varius. Sollicitudin pede sapien taciti dui.”</blockquote>
+                                    <h4 class="mt-4 font-400">Mark Wiggins</h4>
+                                    <span class="text-primary font-fifteen">CEO ( Grodins Group )</span>
+                                </div>
+                                <div class="item">
+                                    <i class="flaticon-right-quote flat-large text-primary d-table mx-auto"></i>
+                                    <blockquote class="text-secondary fs-5 fst-italic">“ Posuere mus curabitur parturient scelerisque suspendisse elementum facilisis dignissim non purus torquent turpis interdum hendrerit erat ultrices pretium risus elementum. Fringilla aliquet mattis lacinia quam a montes maecenas parturient urna varius. Sollicitudin pede sapien taciti dui.”</blockquote>
+                                    <h4 class="mt-4 font-400">Mark Wiggins</h4>
+                                    <span class="text-primary font-fifteen">CEO ( Grodins Group )</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--============== Testimonial Section End ==============-->
+
+        <!--============== Register Section Start ==============-->
+        <div class="full-row bg-primary py-4">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-9 col-md-8">
+                        <h3 class="text-white xs-text-center my-20 font-400">Are you looking for a House or Property Sell?</h3>
+                    </div>
+                    <div class="col-lg-3 col-md-4">
+                        <a href="#" class="btn btn-white y-center position-relative d-table xs-mx-auto ms-auto">Ad Your Property</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--============== Register Section End ==============-->
+
+        <!--============== Footer Section Start ==============-->
+        <footer class="full-row footer-default-dark bg-footer" style="padding-bottom: 30px">
+            <div class="container">
+                <div class="row row-cols-lg-4 row-cols-md-2 row-cols-1">
+                    <div class="col">
+                        <div class="footer-widget mb-4">
+                            <div class="footer-logo mb-4">
+                                <a href="#"><img src="assets/images/logo/logo-full-white.png" alt="Image not found!"></a>
+                            </div>
+                            <p>Risus commodo congue augue phas ellus morbi hymenaeos ante tincidu eu orci dictum bibe ndum lacus pla tea primis mi lacinia</p>
+                        </div>
+                        <div class="footer-widget media-widget mb-4">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#"><i class="fab fa-google-plus-g"></i></a>
+                            <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="footer-widget contact-widget mb-4">
+                            <h3 class="widget-title mb-4">Contact Info</h3>
+                            <ul>
+                                <li>Unicoder Design Agency 301 The Greenhouse, Custard Factory, London, E3 8DY.</li>
+                                <li>+1 246-345-0695</li>
+                                <li>helpline@homex.com</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="footer-widget footer-nav mb-4">
+                            <h3 class="widget-title mb-4">Quick Links</h3>
+                            <ul>
+                                <li><a href="#">Our Services</a></li>
+                                <li><a href="#">Investment Solution</a></li>
+                                <li><a href="#">Frequenly Ask Question</a></li>
+                                <li><a href="#">How It Work</a></li>
+                                <li><a href="#">Become a Member</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="footer-widget newslatter-widget mb-4">
+                            <h4 class="widget-title mb-4">Appointment</h4>
+                            <p>Litora ligula dapibus scelerisque vitae, fermentum aenean gravida lobortis mus pulvinar magna turient primis.</p>
+                            <a href="#" class="btn btn-primary w-100">Register Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!--============== Footer Section End ==============-->
+
+        <!--============== Copyright Section Start ==============-->
+        <div class="copyright bg-footer text-default py-4">
+            <div class="container">
+                <div class="row row-cols-md-2 row-cols-1">
+                    <div class="col">
+                        <span class="text-white">© 2022 Uniland All right reserved</span>
+                    </div>
+                    <div class="col">
+                        <ul class="line-menu float-end list-color-gray">
+                            <li><a href="#">Privacy & Policy </a></li>
+                            <li>|</li>
+                            <li><a href="#">Site Map</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--============== Copyright Section End ==============-->
+
+        <!-- Scroll to top -->
+        <div class="scroll-top-vertical xs-mx-none" id="scroll">Go Top <i class="ms-2 fa-solid fa-arrow-right-long"></i></div>
+        <!-- End Scroll To top -->
+
+        <!--============== Modal Start ==============-->
+        <div class="overlay-dark modal fade quick-view-modal" id="quick-view">
+            <div class="modal-dialog modal-dialog-centered modal-xl">
+                <div class="modal-content">
+                    <div class="close view-close">
+                        <span aria-hidden="true">&times;</span>
+                    </div>
+                    <div class="modal-body property-block summary p-3">
+                        <div class="row row-cols-xl-2 row-cols-1">
+                            <div class="col">
+                                <div class="overflow-hidden position-relative transation thumbnail-img bg-secondary hover-img-zoom m-2">
+                                    <div class="cata position-absolute">
+                                        <span class="sale bg-secondary text-white">For Rent</span>
+                                        <span class="featured bg-primary text-white">Featured</span>
+                                    </div>
+                                    <a href="#"><img class="w-100" src="assets/images/property/2.png" alt=""></a>
+                                    <ul class="position-absolute quick-meta">
+                                        <li><a href="#"><i class="flaticon-transfer flat-mini"></i></a></li>
+                                        <li><a href="#"><i class="flaticon-like-1 flat-mini"></i></a></li>
+                                        <li><a href="#"><i class="flaticon-share flat-mini"></i></a></li>
+                                        <li><a href="#"><i class="flaticon-printer flat-mini"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="property_text transation py-3 pe-3">
+                                    <span class="d-inline-block text-primary">Condos</span>
+                                    <h5 class="modal-title mb-1" id="staticBackdropLabel"><a href="#" class="text-secondary hover-text-primary transation">Luxury Condos Infront of the street of Green Park</a></h5>
+                                    <span class="mt-1 mb-3 d-block font-fifteen"><i class="fas fa-map-marker-alt text-primary"></i> 2305 Tree Frog Lane Overlandpk, MO 66210</span>
+                                    <a href="#" class="d-block text-light hover-text-primary font-small mb-2">( 100 People Recommended )</a>
+                                    <div class="d-flex">
+                                        <span class="text-secondary font-large">$5600 - $8300/<small>mo</small></span>
+                                        <span class="text-white font-mini px-2 rounded product-status ms-5 my-1 bg-primary"><i class="fas fa-check"></i> Available</span>
+                                    </div>
+                                    <div class="product-offers mt-3">
+                                        <ul class="product-offers-list">
+                                            <li class="product-offer-item"> <strong>Special Price </strong>Get extra 19% off (price inclusive of discount)</li>
+                                            <li class="product-offer-item"> <strong>Bank Offer </strong> 10% instant discount on VISA Cards</li>
+                                            <li class="product-offer-item"> <strong>No cost EMI $49/month.</strong> Standard EMI also available</li>
+                                        </ul>
+                                    </div>
+                                    <hr>
+                                    <div class="quantity">
+                                        <ul class="d-flex">
+                                            <li><span>Rooms:</span> 5</li>
+                                            <li><span>Beds:</span> 3</li>
+                                            <li><span>Bathrooms:</span> 2</li>
+                                            <li><span>Garage:</span> 1</li>
+                                            <li><span>Area:</span> 1100 Sqft</li>
+                                        </ul>
+                                    </div>
+                                    <h5 class="text-secondary my-3">Description</h5>
+                                    <p>Bibendum purus aenean mus aenean eu interdum nonummy ipsum ad consequat. Dui eros donec faucibus convallis tempus rutrum id donec mus hymenaeos placerat congue curae mauris turpis gravida viverra consequat consequat
+                                        gravida luctus.</p>
+                                    <div class="short-description d-flex">
+                                        <span class="me-4"><b>Highlights:</b></span>
+                                        <div class="short-description">
+                                            <ul class="list-style-tick">
+                                                <li>Regular Fit.</li>
+                                                <li>Full sleeves.</li>
+                                                <li>Machine wash, tumble dry.</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex align-items-center post-meta mt-2 py-3 border-top">
+                                        <div class="agent">
+                                            <a href="#" class="d-flex text-general align-items-center"><img class="rounded-circle me-2" src="assets/images/team/1.jpg" alt="avata"><span>Ali Tufan</span></a>
+                                        </div>
+                                        <div class="post-date ms-auto"><span>2 Month Ago</span></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--============== Modal End ==============-->
+
+    </div>
+
+    <!-- Javascript Files -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/bootstrap-select.min.js"></script>
+    <script src="assets/js/jquery.fancybox.min.js"></script>
+    <script src="assets/js/owl.js"></script>
+    <script src="assets/js/range/tmpl.js"></script>
+    <script src="assets/js/range/jquery.dependClass.js"></script>
+    <script src="assets/js/range/draggable.js"></script>
+    <script src="assets/js/range/jquery.slider.js"></script>
+    <script src="assets/js/wow.js"></script>
+    <script src="assets/js/mixitup.min.js"></script>
+    <script src="assets/js/paraxify.js"></script>
+    <!-- Map -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBPZ-Erd-14Vf2AoPW2Pzlxssf6-2R3PPs"></script>
+    <script src="assets/js/map/markerwithlabel_packed.js"></script>
+    <script src="assets/js/map/infobox.js"></script>
+    <script src="assets/js/map/markerclusterer_packed.js"></script>
+    <script src="assets/js/map/custom-map.js"></script>
+    <script src="assets/js/custom.js"></script>
+    <script>
+        (function($) {
+            var _latitude = 36.596165;
+            var _longitude = -97.062988;
+            createHomepageGoogleMap(_latitude, _longitude);
+        })(jQuery);
+    </script>
+</body>
+
+</html>

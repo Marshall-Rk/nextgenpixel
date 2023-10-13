@@ -1,0 +1,114 @@
+/*==================================
+Theme Color All Codes Variable
+==================================*/
+
+:root {
+    --theme-general-color: #6d7175;
+    /* theme gray color */
+}
+
+:root {
+    --theme-primary-color: #c79731;
+    /* theme primary color */
+}
+
+:root {
+    --theme-secondary-color: #222;
+    /* theme secondary color */
+}
+
+:root {
+    --theme-white-color: #fff;
+    /* theme white font color */
+}
+
+:root {
+    --theme-light-color: #f8f5f0;
+    /* theme light gray color */
+}
+
+:root {
+    --theme-gray-color: #efefef;
+    /* theme gray color */
+}
+
+:root {
+    --theme-dark-color: #12171f;
+    /* theme dark color ok*/
+}
+
+:root {
+    --theme-extra-color: #52412e;
+    /* theme extra color */
+}
+
+:root {
+    --theme-footer-color: #12171f;
+    /* theme dark color ok*/
+}
+
+:root {
+    --theme-primary-opacity-color: rgba(170, 132, 83, .8);
+    /* theme secondary color */
+}
+
+:root {
+    --theme-secondary-opacity-color: rgba(34, 34, 34, .8);
+    /* theme secondary color */
+}
+
+:root {
+    --theme-dark-opacity-color: rgba(24, 26, 29, .8);
+    /* theme dark opacity color */
+}
+
+:root {
+    --theme-white-opacity-color: rgba(255, 255, 255, 0.5);
+    /* theme light color */
+}
+
+:root {
+    --text-light-color: #9b9b9b;
+    /* text light color */
+}
+
+:root {
+    --text-gray-color: #c3c3c3;
+    /* theme text gray color */
+}
+
+:root {
+    --theme-primary-color-rgba: 170, 132, 83;
+    /* theme secondary color */
+}
+
+
+/*==================================
+Font Variable
+==================================*/
+
+:root {
+    --theme-general-font: 'Barlow', sans-serif;;
+    /* Font use for normal text and general text */
+}
+
+:root {
+    --theme-hiperlink-font: 'Sen', sans-serif;
+    /* Font use for normal text and general text */
+}
+
+:root {
+    --theme-highlight-font: 'Sen', sans-serif;
+    /* Font used in title or special area */
+}
+
+
+/* Added alpha seperately */
+
+.select-custom li input[type="radio"]:checked+label {
+    background-color: rgba(var(--theme-primary-color-rgba), 0.1)
+}
+
+.sub-title {
+    font-size: 17px;
+}
