@@ -35,10 +35,595 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/colors/color.css">
     <link rel="stylesheet" href="assets/css/loader.css">
-   
-    <link rel="stylesheet" href="assets/css/colors/skin.css" >
+  
+    <style>
+        /* LayerSlider Outline Skin */
 
-   
+
+.ls-outline .ls-button{
+	text-decoration: none !important;
+	color: #fff;
+	background-color: rgba(0,0,0,0.1);
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	border-radius: 2px;
+	padding: 12px 25px;
+	border: 2px solid #ffffff !important
+}
+
+.ls-outline .ls-button:hover{
+	background: #fff !important;
+	color: #444;
+}
+
+
+.ls-outline .ls-playvideo {
+	width: 50px;
+	height: 50px;
+	margin-left: -29px;
+	margin-top: -29px;
+	background: rgba(0, 0, 0, 0.7) none repeat scroll 0 0;
+	border: 2px solid rgba(255, 255, 255, 0.7);
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	border-radius: 50%;
+}
+
+.ls-outline .ls-playvideo:before {
+	position: absolute;
+	top: 16px;
+	left: 20px;
+	display: block;
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 9px 0 9px 14px;
+	border-color: transparent transparent transparent rgba(255, 255, 255, 0.8);
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	border-radius: 2px;
+	content: "";
+}
+
+.ls-outline .ls-playvideo:hover:before{
+	border-color: transparent transparent transparent rgba(255, 255, 255, 1);
+}
+
+.ls-outline .ls-playvideo:hover {
+	background: rgba(0,0,0,1);
+	border: 2px solid rgba(255, 255, 255, 1);
+}
+
+
+.ls-outline .ls-nav-prev,
+.ls-outline .ls-nav-next {
+	-webkit-transition: background 0.15s !important;
+	-moz-transition: background 0.15s !important;
+	transition: background 0.15s !important;
+}
+
+.ls-outline .ls-nav-prev {
+	-webkit-transform-origin: 0% 50% 0;
+	-moz-transform-origin: 0% 50% 0;
+	transform-origin: 0% 50% 0;
+}
+
+.ls-outline .ls-nav-next {
+	-webkit-transform-origin: 100% 50% 0;
+	-moz-transform-origin: 100% 50% 0;
+	transform-origin: 100% 50% 0;
+}
+
+
+.ls-outline .ls-nav-prev:hover,
+.ls-outline .ls-nav-next:hover {
+	background-color: #fff;
+}
+
+.ls-outline .ls-nav-prev:before,
+.ls-outline .ls-nav-prev:after,
+.ls-outline .ls-nav-next:before,
+.ls-outline .ls-nav-next:after{
+	width: 3px;
+	height: 12px;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	border-radius: 2px;
+	left: 26px;
+	top: 12px;
+	position: absolute;
+	display: block;
+	-webkit-transform: rotate(-40deg);
+	-moz-transform: rotate(-40deg);
+	transform: rotate(-40deg);
+	-webkit-transform-origin: 50% 100% 0;
+	-moz-transform-origin: 50% 100% 0;
+	transform-origin: 50% 100% 0;
+	-webkit-transition: all 0.15s !important;
+	-moz-transition: all 0.15s !important;
+	transition: all 0.15s !important;
+	content: "";
+	background-color: #fff;
+}
+
+.ls-outline .ls-nav-prev:before{
+	top: 23px;
+	left: 18px;
+	-webkit-transform-origin: 50% 0% 0;
+	-moz-transform-origin: 50% 0% 0;
+	transform-origin: 50% 0% 0;
+}
+
+.ls-outline .ls-nav-prev:after{
+	left: 18px;
+	-webkit-transform-origin: 50% 100% 0;
+	-moz-transform-origin: 50% 100% 0;
+	transform-origin: 50% 100% 0;
+	-webkit-transform: rotate(40deg);
+	-moz-transform: rotate(40deg);
+	transform: rotate(40deg);
+}
+
+.ls-outline .ls-nav-next:after{
+	top: 23px;
+	-webkit-transform-origin: 50% 0% 0;
+	-moz-transform-origin: 50% 0% 0;
+	transform-origin: 50% 0% 0;
+	-webkit-transform: rotate(40deg);
+	-moz-transform: rotate(40deg);
+	transform: rotate(40deg);
+}
+
+.ls-outline .ls-nav-prev:active:before{
+	-webkit-transform: translateX(-3px) rotate(-60deg);
+	-moz-transform: translateX(-3px) rotate(-60deg);
+	transform: translateX(-3px) rotate(-60deg);
+}
+
+.ls-outline .ls-nav-prev:active:after{
+	-webkit-transform: translateX(-3px) rotate(60deg);
+	-moz-transform: translateX(-3px) rotate(60deg);
+	transform: translateX(-3px) rotate(60deg);
+}
+
+.ls-outline .ls-nav-next:active:before{
+	-webkit-transform: translateX(3px) rotate(-60deg);
+	-moz-transform: translateX(3px) rotate(-60deg);
+	transform: translateX(3px) rotate(-60deg);
+}
+
+.ls-outline .ls-nav-next:active:after{
+	-webkit-transform: translateX(3px) rotate(60deg);
+	-moz-transform: translateX(3px) rotate(60deg);
+	transform: translateX(3px) rotate(60deg);
+}
+
+
+.ls-outline .ls-nav-prev:hover:before,
+.ls-outline .ls-nav-prev:hover:after,
+.ls-outline .ls-nav-next:hover:before,
+.ls-outline .ls-nav-next:hover:after{
+	background-color: #444;
+}
+
+
+.ls-outline .ls-nav-start{
+	position: relative;
+}
+
+.ls-outline .ls-nav-start:before {
+	position: absolute;
+	top: 2px;
+	left: 9px;
+	display: block;
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 6px 0 6px 8px;
+	border-color: transparent transparent transparent rgba(255, 255, 255, 0.7);
+	content: "";
+}
+
+.ls-outline .ls-nav-start-active:before,
+.ls-outline .ls-nav-start:hover:before{
+	border-color: transparent transparent transparent rgba(255, 255, 255, 1);
+}
+
+.ls-outline .ls-nav-stop {
+	position: relative;
+}
+
+.ls-outline .ls-nav-stop:before {
+	position: absolute;
+	top: 2px;
+	left: 9px;
+	display: block;
+	width: 3px;
+	height: 12px;
+	border: 2px solid rgba(255,255,255,0.7);
+	border-top: none;
+	border-bottom: none;
+	content: "";
+	-webkit-box-sizing: content-box;
+	-moz-box-sizing: content-box;
+	box-sizing: content-box;
+}
+
+
+.ls-outline .ls-nav-stop:hover:before,
+.ls-outline .ls-nav-stop-active:before {
+	border-color: rgba(255,255,255,1);
+}
+
+.ls-outline .ls-bottom-slidebuttons{
+	vertical-align: middle;
+}
+
+/* paginators background color*/
+
+.ls-outline .ls-bottom-slidebuttons a {
+	background: rgba(0,0,0,0.1);
+	border: 2px solid #fff !important;
+	margin-right: 8px;
+	text-align: center;
+	text-decoration: none;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	border-radius: 50%;
+	-webkit-transition: background-color 1.2s ease;
+	-moz-transition: background-color 1.2s ease;
+	transition: background-color 1.2s ease;
+}
+
+.ls-outline .ls-bottom-slidebuttons a:before{
+	font-family: "Lato", sans-serif;
+	font-size: 12px;
+	color: #ffffff;
+	line-height: 10px;
+}
+
+.ls-outline .ls-bottom-slidebuttons a.ls-nav-active,
+.ls-outline .ls-bottom-slidebuttons a:hover {
+	background: #fff;
+}
+
+.ls-outline .ls-bottom-slidebuttons a.ls-nav-active:before,
+.ls-outline .ls-bottom-slidebuttons a:hover:before{
+	color: #000;
+}
+
+
+.ls-outline .ls-nav-prev,
+.ls-outline .ls-nav-next {
+	width: 46px;
+	height: 46px;
+	z-index: 10000;
+	top: 50%;
+	margin-top: -25px;
+	background: rgba(0,0,0,0.1);
+	border: 2px solid #ffffff !important;
+	position: absolute;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	border-radius: 2px;
+}
+
+.ls-outline .ls-nav-prev {
+	left: 20px;
+}
+
+.ls-outline .ls-nav-next {
+	right: 20px;
+}
+
+
+
+.ls-outline .ls-bottom-slidebuttons,
+.ls-outline .ls-bottom-slidebuttons a,
+.ls-outline .ls-nav-start,
+.ls-outline .ls-nav-stop {
+	height: 10px;
+}
+
+.ls-outline .ls-bottom-slidebuttons,
+.ls-outline .ls-bottom-slidebuttons a,
+.ls-outline .ls-nav-start,
+.ls-outline .ls-nav-stop{
+	display: inline-block;
+}
+
+.ls-outline .ls-bottom-slidebuttons,
+.ls-outline .ls-nav-start,
+.ls-outline .ls-nav-stop{
+	top: -37px;
+}
+
+.ls-outline .ls-nav-start,
+.ls-outline .ls-nav-stop {
+	width: 25px;
+	margin-right: 8px;
+	top: -33px;
+}
+
+.ls-outline .ls-bottom-slidebuttons a {
+	width: 10px;
+}
+
+.ls-outline .ls-nav-sides {
+	width: 0px;
+}
+
+.ls-outline .ls-thumbnail-hover {
+	bottom: 19px;
+	padding: 2px;
+	margin-left: 1px;
+}
+
+.ls-outline .ls-thumbnail-hover-bg {
+	background: rgba(255,255,255,1);
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	border-radius: 2px;
+}
+
+.ls-outline .ls-thumbnail-hover span {
+	border: 5px solid rgba(255,255,255,1);
+	margin-left: -5px;
+}
+
+.ls-outline .ls-thumbnail {
+	top: 10px;
+}
+
+.ls-outline .ls-thumbnail-inner {
+	padding: 4px;
+	margin-left: -2px;
+	background: #fff;
+}
+
+.ls-outline .ls-thumbnail-slide a {
+	margin-right: 2px;
+}
+
+.ls-outline .ls-nothumb {
+	background: #eee;
+}
+
+.ls-outline .ls-loading-container {
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+	margin-left: -15px;
+	margin-top: -15px;
+	position: relative;
+	border: 4px solid rgba(0,0,0,0.7);
+	top: 50%;
+	-webkit-animation: loader 2s infinite ease;
+	-moz-animation: loader 2s infinite ease;
+	animation: loader 2s infinite ease;
+}
+
+.ls-outline .ls-loading-indicator  {
+	vertical-align: top;
+	display: inline-block;
+	width: 100%;
+	background-color: rgba(0,0,0,0.7);
+	-webkit-animation: loader-inner 2s infinite ease-in;
+	-moz-animation: loader-inner 2s infinite ease-in;
+	animation: loader-inner 2s infinite ease-in;
+}
+
+@-webkit-keyframes loader {
+	0% {
+		-webkit-transform: rotate(0deg);
+	}
+	25% {
+		-webkit-transform: rotate(180deg);
+	}
+	50% {
+		-webkit-transform: rotate(180deg);
+	}
+	75% {
+		-webkit-transform: rotate(360deg);
+	}
+	100% {
+		-webkit-transform: rotate(360deg);
+	}
+}
+
+@-moz-keyframes loader {
+	0% {
+		-moz-transform: rotate(0deg);
+	}
+	25% {
+		-moz-transform: rotate(180deg);
+	}
+	50% {
+		-moz-transform: rotate(180deg);
+	}
+	75% {
+		-moz-transform: rotate(360deg);
+	}
+	100% {
+		-moz-transform: rotate(360deg);
+	}
+}
+
+@keyframes loader {
+	0% {
+		transform: rotate(0deg);
+	}
+	25% {
+		transform: rotate(180deg);
+	}
+	50% {
+		transform: rotate(180deg);
+	}
+	75% {
+		transform: rotate(360deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+@-webkit-keyframes loader-inner {
+	0% {
+		height: 0%;
+	}
+	25% {
+		height: 0%;
+	}
+	50% {
+		height: 100%;
+	}
+	75% {
+		height: 100%;
+	}
+	100% {
+		height: 0%;
+	}
+}
+
+@-moz-keyframes loader-inner {
+	0% {
+		height: 0%;
+	}
+	25% {
+		height: 0%;
+	}
+	50% {
+		height: 100%;
+	}
+	75% {
+		height: 100%;
+	}
+	100% {
+		height: 0%;
+	}
+}
+
+@keyframes loader-inner {
+	0% {
+		height: 0%;
+	}
+	25% {
+		height: 0%;
+	}
+	50% {
+		height: 100%;
+	}
+	75% {
+		height: 100%;
+	}
+	100% {
+		height: 0%;
+	}
+}
+
+.ls-outline .ls-circle-timer {
+	top: 16px;
+	right: 16px;
+	width: 24px;
+	height: 24px;
+}
+
+.ls-outline .ls-ct-half,
+.ls-outline .ls-ct-center {
+	border-width: 2px;
+}
+
+
+
+.ls-outline .ls-media-unmute {
+	opacity: 1;
+}
+
+.ls-outline .ls-media-unmute-bg {
+	border-radius: 3px;
+	transform: scale(0.1);
+	background: rgba(0,0,0,.1);
+	box-shadow: none !important;
+}
+
+.ls-outline .ls-media-unmute:hover .ls-media-unmute-bg {
+	background: white;
+}
+
+.ls-outline .ls-media-unmute:hover .ls-icon-unmuted {
+		background-image: url(../../img/icon-unmuted-black.png);
+}
+        /* Add CSS for the sticky footer button */
+        .sticky-footer-button {
+            display: none; /* Initially hide the button */
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background-color: #5e0910; /* Change this to your desired background color */
+            color: #fff; /* Change this to your desired text color */
+            padding: 6px 0;
+            text-align: center;
+            z-index: 1000; /* Make sure it's above other content */
+        }
+
+        .contact-button {
+            background-color: #28a745; /* Change this to your desired button background color */
+        }
+
+        /* Add CSS to adjust the form container's margin in mobile view */
+        @media (max-width: 767px) {
+            .form-container {
+                margin-bottom: 60px; /* Adjust this value to create space for the sticky button */
+            }
+            .sticky-footer-button {
+                display: flex;
+                justify-content: space-between;
+            }
+        }
+
+        /* Define the CSS styles for the collapsible search form */
+#search-form {
+    display: block; /* Displayed by default for non-mobile devices */
+}
+
+/* CSS for mobile toggle button */
+.mobile-toggle-button {
+    display: none; /* Hidden by default for non-mobile devices */
+}
+
+@media (max-width: 767px) {
+    /* Media query for mobile devices (adjust the breakpoint as needed) */
+    #search-form {
+        display: none; /* Hidden by default for mobile devices */
+    }
+
+    .mobile-toggle-button {
+        display: block; /* Displayed for mobile devices */
+    }
+}
+
+.mobile-search-open #search-form {
+    display: block;
+}
+
+    </style>
+    
+    <script>
+        function toggleSearchForm() {
+    var searchForm = document.getElementById('search-form');
+    var body = document.body;
+
+    if (searchForm.style.display === 'block') {
+        searchForm.style.display = 'none';
+        body.classList.remove('mobile-search-open');
+    } else {
+        searchForm.style.display = 'block';
+        body.classList.add('mobile-search-open');
+    }
+}
+
+    </script>
 </head>
 
 <body>
@@ -60,7 +645,7 @@
                         </div>
                         <div class="col">
                             <ul class="nav-bar-top right list-color-white d-flex">
-                                <li style="font-size:16px;"><a href="#"><i class="fa fa-map-marker" aria-hidden="true"></i> Vasai - Boisar
+                                <li style="font-size:16px;"><a href="#"><i class="fas fa-map-marker-alt"></i> Vasai - Boisar
                                     Palghar, Maharashtra
                                     </a></li>
                                 <li style="font-size:16px;"><a href="#"><i class="fa fa-clock" aria-hidden="true"></i> 9 am to 7 pm
@@ -189,12 +774,12 @@
             <div id="slider" class="overflow-hidden" style="width:1920px; height:960px; margin:0 auto;margin-bottom: 0px;">
 
                 <div class="ls-slide" data-ls="bgsize:cover; bgposition:50% 50%; duration:8000; transition2d:104; kenburnsscale:1.00;">
-                    <img width="1920" height="960" src="assets/banner/4.jpg" class="ls-bg" alt="" />
+                    <img width="1920" height="960" src="assets/banner/3.jpg" class="ls-bg" alt="" />
                   
                 </div>
               
                 <div class="ls-slide" data-ls="bgsize:cover; bgposition:50% 50%; duration:8000; transition2d:104; kenburnsscale:1.00;">
-                    <img width="1920" height="960" src="assets/banner/3.jpg" class="ls-bg" alt="" />
+                    <img width="1920" height="960" src="assets/banner/4.jpg" class="ls-bg" alt="" />
                   
                 </div>
                 <div class="ls-slide" data-ls="bgsize:cover; bgposition:50% 50%; duration:8000; transition2d:104; kenburnsscale:1.00;">
@@ -206,110 +791,70 @@
             </div>
         </div>
         <!--============== Slider Area End ==============-->
-
+        
         <!--============== Property Search Form Start ==============-->
         <div class="full-row p-0 property-search-form on-slider">
             <div class="container">
-                <div class="row">
+                <div class="row md-center">
                     <div class="col">
-                        <form class="bg-white shadow-sm quick-search form-icon-right position-relative" action="#" method="post">
+                        <button id="formtoggle" class="btn btn-primary w-100 mobile-toggle-button" onclick="toggleSearchForm()"><i class="fa fa-home" aria-hidden="true"></i>
+                             CLICK TO SEARCH</button>
+                        <form class="bg-white shadow-sm quick-search form-icon-right position-relative" id="search-form" action="#" method="post">
                             <div class="row row-cols-lg-6 row-cols-md-3 row-cols-1 g-3">
                                 <div class="col">
                                     <input type="text" class="form-control" name="keyword" placeholder="Enter Keyword...">
                                 </div>
                                 <div class="col">
                                     <select class="form-control">
-										<option>Property Types</option>
-										<option>House</option>
-										<option>Office</option>
-										<option>Appartment</option>
-										<option>Condos</option>
-										<option>Villa</option>
-										<option>Small Family</option>
-										<option>Single Room</option>
-									</select>
+                                        <option>All Cities</option>
+                                        <option>House</option>
+                                        <option>Office</option>
+                                        <option>Appartment</option>
+                                        <option>Condos</option>
+                                        <option>Villa</option>
+                                        <option>Small Family</option>
+                                        <option>Single Room</option>
+                                    </select>
                                 </div>
                                 <div class="col">
-                                    <div class="position-relative">
-                                        <input type="text" class="form-control" name="location" placeholder="Location">
-                                        <i class="flaticon-placeholder flat-mini icon-font y-center text-dark"></i>
-                                    </div>
+                                    <select class="form-control">
+                                        <option>Property Types</option>
+                                        <option>House</option>
+                                        <option>Office</option>
+                                        <option>Appartment</option>
+                                        <option>Condos</option>
+                                        <option>Villa</option>
+                                        <option>Small Family</option>
+                                        <option>Single Room</option>
+                                    </select>
                                 </div>
                                 <div class="col">
-                                    <div class="position-relative">
-                                        <button class="form-control price-toggle toggle-btn" data-target="#data-range-price">Price <i class="fas fa-angle-down font-mini icon-font y-center text-dark"></i></button>
-                                        <div id="data-range-price" class="price_range price-range-toggle">
-                                            <div class="area-filter price-filter">
-                                                <span class="price-slider">
-												<input class="filter_price" type="text" name="price" value="0;10000000">
-											</span>
-                                            </div>
-                                        </div>
-                                    </div>
+                                    <select class="form-control">
+                                        <option>All Cities</option>
+                                        <option>House</option>
+                                        <option>Office</option>
+                                        <option>Appartment</option>
+                                        <option>Condos</option>
+                                        <option>Villa</option>
+                                        <option>Small Family</option>
+                                        <option>Single Room</option>
+                                    </select>
                                 </div>
                                 <div class="col">
-                                    <div class="position-relative">
-                                        <button class="form-control text-start toggle-btn" data-target="#aditional-check">Advanced <i class="fas fa-ellipsis-v font-mini icon-font y-center text-dark"></i></button>
-                                    </div>
+                                    <select class="form-control">
+                                        <option>Property Types</option>
+                                        <option>House</option>
+                                        <option>Office</option>
+                                        <option>Appartment</option>
+                                        <option>Condos</option>
+                                        <option>Villa</option>
+                                        <option>Small Family</option>
+                                        <option>Single Room</option>
+                                    </select>
                                 </div>
                                 <div class="col">
-                                    <button class="btn btn-primary w-100">Search</button>
-                                </div>
-                                <!-- Advance Features -->
-                                <div id="aditional-check" class="aditional-features p-5">
-                                    <h5 class="mb-3">Aditional Options</h5>
-                                    <ul class="row row-cols-lg-4 row-cols-md-2 row-cols-1 custom-check-box mb-4">
-                                        <li class="col">
-                                            <input type="checkbox" class="custom-control-input hide" id="customCheck1">
-                                            <label class="custom-control-label" for="customCheck1">Air Conditioning</label>
-                                        </li>
-                                        <li class="col">
-                                            <input type="checkbox" class="custom-control-input hide" id="customCheck2">
-                                            <label class="custom-control-label" for="customCheck2">Garage Facility</label>
-                                        </li>
-                                        <li class="col">
-                                            <input type="checkbox" class="custom-control-input hide" id="customCheck3">
-                                            <label class="custom-control-label" for="customCheck3">Swiming Pool</label>
-                                        </li>
-                                        <li class="col">
-                                            <input type="checkbox" class="custom-control-input hide" id="customCheck4">
-                                            <label class="custom-control-label" for="customCheck4">Fire Security</label>
-                                        </li>
-
-                                        <li class="col">
-                                            <input type="checkbox" class="custom-control-input hide" id="customCheck5">
-                                            <label class="custom-control-label" for="customCheck5">Fire Place Facility</label>
-                                        </li>
-                                        <li class="col">
-                                            <input type="checkbox" class="custom-control-input hide" id="customCheck6">
-                                            <label class="custom-control-label" for="customCheck6">Play Ground</label>
-                                        </li>
-                                        <li class="col">
-                                            <input type="checkbox" class="custom-control-input hide" id="customCheck7">
-                                            <label class="custom-control-label" for="customCheck7">Ferniture Include</label>
-                                        </li>
-                                        <li class="col">
-                                            <input type="checkbox" class="custom-control-input hide" id="customCheck8">
-                                            <label class="custom-control-label" for="customCheck8">Marbel Floor</label>
-                                        </li>
-
-                                        <li class="col">
-                                            <input type="checkbox" class="custom-control-input hide" id="customCheck9">
-                                            <label class="custom-control-label" for="customCheck9">Store Room</label>
-                                        </li>
-                                        <li class="col">
-                                            <input type="checkbox" class="custom-control-input hide" id="customCheck10">
-                                            <label class="custom-control-label" for="customCheck10">Hight Class Door</label>
-                                        </li>
-                                        <li class="col">
-                                            <input type="checkbox" class="custom-control-input hide" id="customCheck11">
-                                            <label class="custom-control-label" for="customCheck11">Floor Heating System</label>
-                                        </li>
-                                        <li class="col">
-                                            <input type="checkbox" class="custom-control-input hide" id="customCheck12">
-                                            <label class="custom-control-label" for="customCheck12">Garden Include</label>
-                                        </li>
-                                    </ul>
+                                    <button class="btn btn-primary w-100"><i class="fa fa-search" aria-hidden="true"></i>
+                                         Search</button>
                                 </div>
                             </div>
                         </form>
@@ -317,43 +862,24 @@
                 </div>
             </div>
         </div>
-        <!--============== Property Search Form End ==============-->
-        
+    
+        <!-- Sticky Footer Buttons -->
+        <div class="sticky-footer-button">
+            <button class="btn btn-primary w-50 contact-button" style="margin:10px;"><i class="fa fa-user" aria-hidden="true"></i>
+                 GET IN TOUCH</button>
+            <a href="#formtoggle" class="btn btn-primary w-50" style="margin: 10px">
+                <i class="fa fa-search" aria-hidden="true"></i> SEARCH
+            </a>
+            
+
+
+
+        </div>
         <!-- =============== About ================-->
       
-
+        
         <!-- =============== Counting ================-->
-        <div class="full-row">
-            <div class="container">
-                <div class="row row-cols-lg-3 row-cols-1">
-                    <div class="col">
-                        <div class="d-flex flex-row text-uppercase">
-                            <h1 class="text-primary mb-0 pe-4">30+</h1>
-                            <p>Building<br>Built?</p>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="d-flex flex-row text-uppercase">
-                            <h1 class="text-primary mb-0 pe-4">4000+</h1>
-                            <p>Homes<br>Delivered</p>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="d-flex flex-row text-uppercase">
-                            <h1 class="text-primary mb-0 pe-4">30 Lakhs+</h1>
-                            <p>SQ. FT.<br>Delivered </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="full-row p-0">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12"><hr></div>
-                </div>
-            </div>
-        </div>
+       <br>
         
          <!-- =============== Counting ================-->
          <section id="about" class="about-area about-p pt-120 pb-120 p-relative">
@@ -361,7 +887,7 @@
                 <div class="row align-items-center">
                 <div class="col-lg-6">
                         <div class="s-about-img p-relative">
-                            <img src="assets/images/wall.jpg" alt="img">
+                            <img src="assets/images/wall.jpg" alt="img" style="border-radius: 15px;">
                            
                         </div>
                     </div>
@@ -369,7 +895,7 @@
                         <div class="about-content s-about-content pl-30">
                             <div class="about-title second-atitle">
                                 <span>About Us</span>
-                                <h2>About Imperial Lifestyle</h2>
+                                <h2 style="font-size:40px">About Imperial Lifestyle</h2>
                                 <p><span></span>Established in 1999</p>
                             </div>
                             <p style="font-size: 22px;">For nearly four long decades, people have trusted in the Imperial lifestyle with their stories. We have seen people buy their first home.
@@ -383,6 +909,7 @@
                 </div>
             </div>
         </section>
+        <br>
 <!-- 
         <div class="full-row">
             <div class="container">
@@ -656,20 +1183,20 @@
             <div class="col-lg-8">
                 <div class="fact-counter">
                     <div class="row row-cols-md-2 row-cols-1">
-                        <div class="col">
+                        <div class="col-6">
                             <div class="mb-30 text-start count wow fadeIn" data-wow-duration="300ms">
                                 <span class="count-num text-primary h1" data-speed="3000" data-stop="15000">15000+</span>
                                 <div class="text-secondary h5 py-2">Smiles Delivered</div>                             
                             </div>
                         </div>
-                        <div class="col">
+                        <div class="col-6">
                             <div class="mb-30 text-start count wow fadeIn" data-wow-duration="300ms">
                                 <span class="count-num text-primary h1" data-speed="3000" data-stop="9">9</span>
                                 <div class="text-secondary h5 py-2">Buildings under construction</div>
                                
                             </div>
                         </div>
-                        <div class="col">
+                        <div class="col-6">
                             <div class="mb-30 text-start count wow fadeIn" data-wow-duration="300ms">
                                 <span class="count-num text-primary h1" data-speed="3000" data-stop="1612">1612</span>
                                 <div class="text-secondary h5 py-2">Homes under construction</div>
@@ -677,7 +1204,7 @@
                             </div>
                         </div>
 
-                        <div class="col">
+                        <div class="col-6">
                             <div class="mb-30 text-start count wow fadeIn" data-wow-duration="300ms">
                                 <span class="count-num text-primary h1" data-speed="3000" data-stop="6000">6000</span>
                                 <div class="text-secondary h5 py-2">Future Smiles</div>
@@ -730,28 +1257,28 @@
  <div class="full-row bg-gray">
     <div class="container">
         <div class="row row-cols-lg-4 row-cols-sm-2 row-cols-1 g-4">
-            <div class="col">
+            <div class="col-6">
                 <div class="thumb-angle-left mb-4 wow fadeInUp" data-wow-delay="100ms" data-wow-duration="1000ms">
                     <div class="box-70px bg-primary p-3"><i class="flaticon-sketch-1 flat-small text-white"></i></div>
                     <h5 class="mt-5 mb-3"><a href="#" class="transation">Our Mission Is to</a></h5>
                     <p>Create and provide innovative lifestyle projects through the optimization of capital investments, rich resources, and human expertise.</p>
                 </div>
             </div>
-            <div class="col">
+            <div class="col-6">
                 <div class="thumb-angle-left mb-4 wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1000ms">
                     <div class="box-70px bg-primary p-3"><i class="flaticon-contract flat-small text-white"></i></div>
                     <h5 class="mt-5 mb-3"><a href="#" class="transation">Integrity Integrity</a></h5>
                     <p>Integrity is the cornerstone of our business philosophy, guiding our commitment to responsible and ethical practices in all our endeavors.</p>
                 </div>
             </div>
-            <div class="col">
+            <div class="col-6">
                 <div class="thumb-angle-left mb-4 wow fadeInUp" data-wow-delay="300ms" data-wow-duration="1000ms">
                     <div class="box-70px bg-primary p-3"><i class="flaticon-real-estate flat-small text-white"></i></div>
                     <h5 class="mt-5 mb-3"><a href="#" class="transation">Mutual Respect</a></h5>
                     <p>We treat each other and everyone with honesty and respect. What we have and what we will achieve is completely through our team’s efforts.</p>
                 </div>
             </div>
-            <div class="col">
+            <div class="col-6">
                 <div class="thumb-angle-left mb-4 wow fadeInUp" data-wow-delay="400ms" data-wow-duration="1000ms">
                     <div class="box-70px bg-primary p-3"><i class="flaticon-online-marketing flat-small text-white"></i></div>
                     <h5 class="mt-5 mb-3"><a href="#" class="transation">Passion</a></h5>
@@ -1162,7 +1689,39 @@
                 </div>
             </div>
         </div>
+        <div class="full-row">
+            <div class="container">
+                <div class="row row-cols-lg-3 row-cols-1">
+                    <div class="col">
+                        <div class="d-flex flex-row text-uppercase">
+                            <h1 class="text-primary mb-0 pe-4">30+</h1>
+                            <p>Building<br>Built?</p>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="d-flex flex-row text-uppercase">
+                            <h1 class="text-primary mb-0 pe-4">4000+</h1>
+                            <p>Homes<br>Delivered</p>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="d-flex flex-row text-uppercase">
+                            <h1 class="text-primary mb-0 pe-4">30 Lakhs+</h1>
+                            <p>SQ. FT.<br>Delivered </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         
+        <div class="full-row p-0">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12"><hr></div>
+                </div>
+            </div>
+        </div>
         <!--============== Testimonial Section Start ==============-->
         <div class="full-row">
             <div class="container">
@@ -1781,7 +2340,7 @@
             skin: 'outline',
             fitScreenWidth: true,
             fullSizeMode: 'fitheight',
-            navButtons: false,
+            navButtons: true,
             navStartStop: false,
             height:840,
             skinsPath: 'assets/skins/'

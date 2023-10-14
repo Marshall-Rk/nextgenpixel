@@ -2548,7 +2548,7 @@ ul.nav-tab-border-active .mixitup-control-active {
 }
 
 .thumb-modern-border {
-    border: 5px solid;
+    border: 1px solid;
     border-color: var(--theme-primary-color);
 }
 
