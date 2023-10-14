@@ -508,7 +508,7 @@
             loop: true,
             margin: 24,
             nav: false,
-            dots: false,
+            dots: true,
             smartSpeed: 500,
             autoplay: 4000,
             responsive: {
