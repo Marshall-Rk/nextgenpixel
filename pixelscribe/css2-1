@@ -1,0 +1,21 @@
+﻿@font-face {
+  font-family: 'Be Vietnam Pro';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(s/bevietnampro/v11/QdVPSTAyLFyeg_IDWvOJmVES_Eww.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Be Vietnam Pro';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(s/bevietnampro/v11/QdVMSTAyLFyeg_IDWvOJmVES_HTEJl8y.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Be Vietnam Pro';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(s/bevietnampro/v11/QdVMSTAyLFyeg_IDWvOJmVES_HToIV8y.ttf) format('truetype');
+}

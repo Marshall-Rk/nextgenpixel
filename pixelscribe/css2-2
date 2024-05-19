@@ -1,0 +1,7 @@
+﻿@font-face {
+  font-family: 'Lily Script One';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(s/lilyscriptone/v15/LhW9MV7ZMfIPdMxeBjBvFN8SXLS4gg.ttf) format('truetype');
+}

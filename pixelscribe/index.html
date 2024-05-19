@@ -1,0 +1,233 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Translating Images into Textual Poetry">
+  <meta name="keywords" content="bootstrap 5, saas, landing page">
+  <meta name="author" content="PixelScribe">
+  <title>PixelScribe - Translating Images into Textual Poetry</title>
+  <link rel="stylesheet" href="assets/css/fonts/ff-1.css">
+  <link rel="stylesheet" href="assets/css/fonts/ff-3.css">
+  <link rel="stylesheet" href="assets/css/fonts/bootstrap-icons.css">
+  <link rel="icon" href="assets/ico.png" type="image/png">
+  <link rel="stylesheet" href="assets/css/plugins.min.css">
+  <link rel="stylesheet" href="assets/css/style.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body class="bg-black">
+  <!-- Custom Cursor  -->
+  <div class="custom-cursor">
+    <div>
+      <span></span>
+      <svg class="custom-cursor__img" width="119" height="45" viewbox="0 0 119 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <g clip-path="url(#clip0_1130_4828)">
+          <path d="M10.9627 22.9931L12.2909 16.1687C12.603 14.5633 14.1573 13.0107 15.7632 12.7011L21.5757 11.5778C23.181 11.2681 23.2911 10.4355 21.8214 9.719L2.95694 0.527836C1.48667 -0.188687 0.764833 0.470432 1.34397 1.99934L9.34853 23.1305C9.92766 24.6594 10.6501 24.5984 10.9627 22.9931Z" fill="url(#paint0_linear_1130_4828)"></path>
+        </g>
+        <rect x="16" y="16.2383" width="103" height="28" rx="4" fill="url(#paint1_linear_1130_4828)"></rect>
+        <defs>
+          <lineargradient id="paint0_linear_1130_4828" x1="-58.0002" y1="-33.2617" x2="25.4638" y2="2.23919" gradientunits="userSpaceOnUse">
+            <stop offset="1" stop-color="#F49959"></stop>
+          </lineargradient>
+          <lineargradient id="paint1_linear_1130_4828" x1="-53.2743" y1="34.7382" x2="110.992" y2="27.6664" gradientunits="userSpaceOnUse">
+            <stop offset="1" stop-color="#F49959"></stop>
+          </lineargradient>
+          <clippath id="clip0_1130_4828">
+            <rect width="24" height="24" fill="white" transform="translate(0 0.238281)"></rect>
+          </clippath>
+        </defs>
+      </svg>
+    </div>
+    <div></div>
+  </div>
+  <!-- /Custom Cursor  -->
+  <!-- preloader -->
+  <div class="preloader">
+    <div class="preloader__img">
+      <img src="assets/img/preloader-img.png" alt="image">
+    </div>
+  </div>
+  <!-- preloader End -->
+  <!-- Header -->
+  <header class="header header--1 header--fixed">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <nav class="menu d-lg-flex justify-content-lg-between align-items-lg-center py-3 py-lg-0">
+            <div class="d-flex align-items-center justify-content-between">
+              <a href="index.html" class="logo link d-inline-flex align-items-center flex-shrink-0">
+                <img src="assets/new.svg" style="height: 100%;width: 100%;margin-top: 40px;" alt="logo" class="img-fluid object-fit-contain">
+              </a>
+             
+            </div>
+            <d
+          </nav>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- /Header -->
+  <div class="trigger-showcase position-relative z-1">
+    <!-- Hero Section Shapes -->
+    <div class="hero-1-shapes">
+      <img src="assets/img/hero-shape-left.webp" alt="image" class="img-fluid hero-1-shapes__img hero-1-shapes__img--1">
+      <img src="assets/img/hero-shape-right.webp" alt="image" class="img-fluid hero-1-shapes__img hero-1-shapes__img--2">
+      <img src="assets/img/hero-shape-ring-1.png" alt="image" class="img-fluid hero-1-shapes__img hero-1-shapes__img--3">
+      <img src="assets/img/hero-shape-ring-2.png" alt="image" class="img-fluid hero-1-shapes__img hero-1-shapes__img--4">
+    </div>
+    <!-- /Hero Section Shapes -->
+    <!-- Hero 1 -->
+    <section class="hero-1" style="padding-top:80px !important;">
+      <div class="container">
+        <div class="row justify-content-md-center">
+          <div class="col-md-10 col-lg-9 col-xxl-10 text-center">
+            <h1 class="clr-white fw-extrabold mb-6 animate-line-3d"> A Deep Dive into <br><span class="clr-grad-1">Pixel to Word Tech</span>
+            </h1>
+
+           <div class="newsletter-1 d-inline-block w-100 max-text-60 mx-auto mb-4 position-relative z-1 overflow-hidden rounded fadeIn_bottom">
+        <div class="d-flex p-3 bg-neutral-10 rounded ">
+            <input type="text" id="imageDescription" class="form-control newsletter-1__input bg-transparent clr-neutral-60" placeholder="Unveiling the Magic: Click here to Select Image →" readonly>
+            <button type="button" onclick="selectImage()" class="newsletter-1__btn d-inline-block py-3 px-5 rounded fw-bold clr-white bg-grad-1" id="generateButton">
+                Generate <i id="spinnerIcon" class="fa fa-spinner fa-spin" style="font-size:24px; display:none;"></i>
+            </button>
+        </div>
+    </div>
+
+    <input type="file" id="fileInput" style="display: none;">
+    <div class="row" id="output" style="display: none;">
+        <div class="col-md-12" id="imageContainer"></div>
+        <div class="col-md-12" id="descriptionContainer"></div>
+    </div>
+
+    <script>
+        async function query(data) {
+            const response = await fetch(
+                "https://api-inference.huggingface.co/models/Salesforce/blip-image-captioning-base",
+                {
+                    headers: { Authorization: "Bearer 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" },
+                    method: "POST",
+                    body: data,
+                }
+            );
+            const result = await response.json();
+            return result;
+        }
+
+        function selectImage() {
+            const generateButton = document.getElementById('generateButton');
+            generateButton.innerHTML = '<i id="spinnerIcon" class="fa fa-spinner fa-spin" style="font-size:24px;"></i>';
+            
+            const fileInput = document.getElementById('fileInput');
+            fileInput.click();
+
+            fileInput.onchange = async function() {
+                const spinnerIcon = document.getElementById('spinnerIcon');
+                const file = fileInput.files[0];
+
+                if (!file) {
+                    console.error('No file selected');
+                    spinnerIcon.style.display = 'none';
+                    return;
+                }
+
+                const reader = new FileReader();
+
+                reader.onload = async function(event) {
+                    const imageData = event.target.result;
+                    const description = document.getElementById('imageDescription').value;
+                    const result = await query(imageData);
+                    displayResult(imageData, description, result);
+                    spinnerIcon.style.display = 'none';
+                };
+
+                reader.readAsArrayBuffer(file);
+            };
+        }
+
+        function displayResult(imageData, description, result) {
+            const outputDiv = document.getElementById('output');
+            const imageContainer = document.getElementById('imageContainer');
+            const descriptionContainer = document.getElementById('descriptionContainer');
+            const selectedImage = document.createElement('img');
+            const captionText = document.createElement('div');
+
+            selectedImage.src = URL.createObjectURL(new Blob([new Uint8Array(imageData)]));
+            selectedImage.alt = "Selected Image";
+            selectedImage.style.maxWidth = '100%';
+            selectedImage.style.height = '300px'; 
+            selectedImage.style.objectFit = 'cover';
+            selectedImage.classList.add('img-fluid');           
+            captionText.innerHTML = `
+            <strong style="color:white !important;font-size:29px;">Generated Caption:</strong><br>
+                <p class="clr-grad-1" style="font-size:25px;">${result[0].generated_text}</p>
+            `;
+
+            imageContainer.innerHTML = '';
+            descriptionContainer.innerHTML = '';
+            imageContainer.appendChild(selectedImage);
+            descriptionContainer.appendChild(captionText);
+            outputDiv.style.display = 'block';
+        }
+    </script>
+            
+            <ul class="hero-1__tag-list list list-row align-items-center justify-content-center gap-3 flex-wrap">
+            
+              <li class="animate-fadeInBottom">
+                <a href="#" class="link d-inline-block text-center py-1 px-2 rounded bg-neutral-10 clr-neutral-80 fs-14 fw-medium"> Creative </a>
+              </li>
+              <li class="animate-fadeInBottom">
+                <a href="#" class="link d-inline-block text-center py-1 px-2 rounded bg-neutral-10 clr-neutral-80 fs-14 fw-medium"> AI </a>
+              </li>
+              <li class="animate-fadeInBottom">
+                <a href="#" class="link d-inline-block text-center py-1 px-2 rounded bg-neutral-10 clr-neutral-80 fs-14 fw-medium"> Animation </a>
+              </li>
+              <li class="animate-fadeInBottom">
+                <a href="#" class="link d-inline-block text-center py-1 px-2 rounded bg-neutral-10 clr-neutral-80 fs-14 fw-medium"> Generative </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <img src="assets/hero-shape-img-1.png" alt="image" class="img-fluid hero-1-shapes__img hero-1-shapes__img--5">
+      <img src="assets/hero-shape-img-2.png" alt="image" class="img-fluid hero-1-shapes__img hero-1-shapes__img--6">
+    </section>
+    <!-- /Hero 1 -->
+    <!-- Generated Image Showcase -->
+    <div class="container">
+     
+        
+     
+          <div class="row g-4">
+            <div class="col-md-3">
+              <img src="assets/3.jpg" alt="image" class="img-fluid rounded-1 w-100 ">
+            </div>
+            <div class="col-md-3">
+              <img src="assets/2.jpg" alt="image" class="img-fluid rounded-1 w-100 ">
+            </div>
+            <div class="col-md-3">
+              <img src="assets/4.jpg" alt="image" class="img-fluid rounded-1 w-100 ">
+            </div>
+
+            <div class="col-md-3">
+              <img src="assets/1.jpg" alt="image" class="img-fluid rounded-1 w-100 ">
+            </div>
+          </div>
+      
+     
+    </div>
+    <br>
+    <!-- /Generated Image Showcase -->
+  </div>
+ 
+  </div>
+  <!-- Newsletter 1 -->
+  
+  <!-- /Footer  -->
+  <!-- scrpts -->
+  <script src="assets/js/plugins.js"></script>
+  <script src="assets/js/app.js"></script>
+</body>
+
+</html>
